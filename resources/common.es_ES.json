@@ -1,0 +1,627 @@
+{
+    "action": {
+        "abort": "Cancelar",
+        "activate": "Activar",
+        "add": "A\u00f1adir",
+        "back": "Volver",
+        "changepwd": "Cambiar password",
+        "close": "Cerrar",
+        "complete": "Completar",
+        "confirm": "Confirmar",
+        "deactivate": "Desactivar",
+        "delete": "Eliminar",
+        "edit": "Editar ",
+        "execute": "Ejecutar",
+        "filter": "Filtro",
+        "import": "Importar",
+        "install": "Instalar",
+        "invite": "Invitar",
+        "leave": "Quitar",
+        "login": "Conectar",
+        "logout": "Desconectar",
+        "new_app": "Nueva App",
+        "new_version": "Nueva versi\u00f3n ",
+        "next": "Siguiente",
+        "notify": "Notificaciones",
+        "ok": "Ok",
+        "open": "Abrir",
+        "refresh": "Actualizar ",
+        "remove": "Eliminar",
+        "reset": "Reiniciar",
+        "restore": "Restaurar",
+        "save": "Guardar",
+        "signup": "Registrarse",
+        "submit": "Enviar",
+        "update": "Actualizar"
+    },
+    "address": {
+        "delivery": null,
+        "invoice": null
+    },
+    "amount": {
+        "amount": null,
+        "balance": null,
+        "discount": null,
+        "dunning": null,
+        "netamount": null,
+        "netdiscount": {
+            "excluding": null,
+            "including": null
+        },
+        "nettotal": null,
+        "paid": null,
+        "payable": null,
+        "subtotal": null,
+        "tax": {
+            "addon": null,
+            "base": null,
+            "onamount": null,
+            "vat": null
+        },
+        "total": null
+    },
+    "common": {
+        "all": "Todos",
+        "condition": "Condici\u00f3n",
+        "confirmation": "Confirmaci\u00f3n",
+        "currency": "Moneda",
+        "entities": "Entidades",
+        "entity": "Entidad",
+        "error": "Error",
+        "export": "Exportar",
+        "field": "Campo",
+        "fields": "Campos",
+        "format": "Formato",
+        "import": "Importar",
+        "info": "Informaci\u00f3n",
+        "mandatory": "Obligatorio",
+        "new": "nuevo",
+        "no": "No",
+        "old": "antiguos",
+        "permission_denied": "Permiso denegado",
+        "preview": "Vista anticipada",
+        "profile": "Perfil",
+        "relation": "Relaci\u00f3n",
+        "relations": "Relaciones",
+        "result": "Resultado",
+        "results": "Resultados ",
+        "type": "Tipo",
+        "warning": "Advertencia",
+        "yes": "S\u00ed"
+    },
+    "confirm": {
+        "remove": "\u00bfEst\u00e1 seguro que desea eliminar {value}?",
+        "save": "\u00bfEst\u00e1 seguro que desea guardar {value}?"
+    },
+    "currency": {
+        "eur": {
+            "char": "Eur",
+            "name": "Euro",
+            "sign": "\u20ac"
+        },
+        "usd": {
+            "char": "USD",
+            "name": "US Dollar",
+            "sign": "$"
+        }
+    },
+    "date": {
+        "abbr_day_names": [
+            "Dg",
+            "Lu",
+            " Ma ",
+            "Mx ",
+            "Ju ",
+            "Vi ",
+            "Sa"
+        ],
+        "abbr_month_names": [
+            "Ene.",
+            "Feb.",
+            "Mzo.",
+            "Abr.",
+            "May.",
+            "Jun.",
+            "Jul.",
+            "Ago.",
+            "Sept.",
+            "Oct.",
+            "Nov.",
+            "Dic."
+        ],
+        "day_names": [
+            "Domingo ",
+            "Lunes ",
+            "Martes ",
+            "Mi\u00e9rcoles ",
+            "Jueves ",
+            "Viernes ",
+            "S\u00e1bado"
+        ],
+        "format": {
+            "default": "m\/d\/Y",
+            "short": "m\/d"
+        },
+        "month_names": [
+            "Enero  ",
+            "Febrero ",
+            "Marzo ",
+            "Abril  ",
+            "Mayo ",
+            "Junio ",
+            "Julio ",
+            "Agosto ",
+            "Septiembre ",
+            "Octubre ",
+            "Noviembre ",
+            "Diciembre"
+        ]
+    },
+    "datetime": {
+        "distance_in_words": {
+            "about_x_hours": {
+                "one": "aproximadamente 1 hora",
+                "other": "aproximadamente {count} horas"
+            },
+            "about_x_months": {
+                "one": "aproximadamente 1 mes",
+                "other": "aproximadamente {count} meses"
+            },
+            "about_x_years": {
+                "one": "aproximadamente 1 a\u00f1o",
+                "other": "aproximadamente {count} a\u00f1os"
+            },
+            "almost_x_years": {
+                "one": "casi 1 a\u00f1o",
+                "other": "casi {count} a\u00f1os"
+            },
+            "half_a_minute": "medio minuto",
+            "less_than_x_minutes": {
+                "one": "menos de 1 minuto",
+                "other": "menos de {count} minutos"
+            },
+            "less_than_x_seconds": {
+                "one": "menos de 1 segundo",
+                "other": "menos de {count} segundos"
+            },
+            "over_x_years": {
+                "one": "m\u00e1s de 1 a\u00f1o",
+                "other": "m\u00e1s de {count} a\u00f1os"
+            },
+            "x_days": {
+                "one": "1 d\u00eda",
+                "other": "{count} d\u00edas"
+            },
+            "x_minutes": {
+                "one": "1 minuto",
+                "other": "{count} minutos"
+            },
+            "x_months": {
+                "one": "1 mes",
+                "other": "{count} meses"
+            },
+            "x_seconds": {
+                "one": "1 segundo",
+                "other": "{count} segundos"
+            }
+        },
+        "unit": {
+            "day": null,
+            "month": null,
+            "year": null
+        }
+    },
+    "entity": {
+        "accounts": {
+            "plural": "Cuentas",
+            "singular": "Cuenta"
+        },
+        "activity": {
+            "plural": "Actividades ",
+            "singular": "Actividad"
+        },
+        "campaigns": {
+            "plural": "Campa\u00f1as",
+            "singular": "Campa\u00f1a"
+        },
+        "cases": {
+            "plural": "Casos",
+            "singular": "Caso"
+        },
+        "category": {
+            "plural": "Categor\u00edas  ",
+            "singular": "Categor\u00eda"
+        },
+        "clocking": {
+            "plural": "Entradas de tiempos",
+            "singular": "Entrada de tiempos"
+        },
+        "comments": {
+            "plural": "Comentarios",
+            "singular": "Comentario"
+        },
+        "contacts": {
+            "plural": "Contactos",
+            "singular": "Contacto"
+        },
+        "contracts": {
+            "plural": "Contratos",
+            "singular": "Contrato"
+        },
+        "customer": {
+            "plural": "Clientes",
+            "singular": "Cliente"
+        },
+        "dunning": {
+            "plural": "Reclamaciones",
+            "singular": "Reclamaci\u00f3n"
+        },
+        "field": {
+            "plural": "Campos",
+            "singular": "Campo"
+        },
+        "groups": {
+            "plural": "Grupos",
+            "singular": "Grupo"
+        },
+        "items": {
+            "plural": "Art\u00edculos",
+            "singular": "Art\u00edculo"
+        },
+        "language": {
+            "plural": "Idiomas",
+            "singular": "Idioma"
+        },
+        "links": {
+            "plural": "Enlaces",
+            "singular": "Enlace"
+        },
+        "mailinglists": {
+            "plural": "Listas de correos",
+            "singular": "Lista de correo"
+        },
+        "mailservers": {
+            "plural": "Servidores de correo",
+            "singular": "Servidor de correo"
+        },
+        "messages": {
+            "plural": "Mensajes",
+            "singular": "Mensaje"
+        },
+        "notes": {
+            "plural": "Notas",
+            "singular": "Nota"
+        },
+        "opportunities": {
+            "plural": "Oportunidades",
+            "singular": "Oportunidad"
+        },
+        "organization": {
+            "plural": "Organizaciones",
+            "singular": "Organizaci\u00f3n "
+        },
+        "payments": {
+            "plural": "Pagos",
+            "singular": "Pago"
+        },
+        "pricelists": {
+            "plural": "Listas de precios",
+            "singular": "Lista de precios"
+        },
+        "pricelists2items": {
+            "plural": "Art\u00edculos de la lista de precios",
+            "singular": "Art\u00edculo de la lista de precios"
+        },
+        "projects": {
+            "plural": "Proyectos",
+            "singular": "Proyecto"
+        },
+        "serials": {
+            "plural": "N\u00fameros de serie",
+            "singular": "N\u00famero de serie"
+        },
+        "stocktransactions": {
+            "plural": "Transacciones de stock",
+            "singular": "Transacci\u00f3n de stock"
+        },
+        "storages": {
+            "plural": "Almacenes",
+            "singular": "Almac\u00e9n"
+        },
+        "tags": {
+            "plural": "Etiquetas",
+            "singular": "Etiqueta"
+        },
+        "tasks": {
+            "plural": "Tareas",
+            "singular": "Tarea"
+        },
+        "tickets": {
+            "plural": "Tickets",
+            "singular": "Ticket"
+        },
+        "transactions": {
+            "plural": "Transacciones",
+            "singular": "Transacci\u00f3n"
+        },
+        "users": {
+            "plural": "Usuarios",
+            "singular": "Usuario "
+        }
+    },
+    "error": {
+        "accepted": "{value} debe ser aceptado",
+        "add": "No se puede a\u00f1adir {model}",
+        "app_not_public": "App no p\u00fablica",
+        "blank": "{value} no puede estar en blanco",
+        "circular_dependency": "Esta relaci\u00f3n podr\u00eda causar una dependencia circular",
+        "confirm_agb": "Tiene que confirmar los t\u00e9rminos del servicio",
+        "confirmation": "{value} no coincide con la confirmaci\u00f3n",
+        "country_short": "{value} tiene que constar de dos caracteres (p.ej. EN)",
+        "create": "No se puede crear el nuevo {model}",
+        "date_invalid": "Fecha inv\u00e1lida ",
+        "date_range": "{value} debe estar entre {min} y {max}",
+        "date_start_end": "{value} tiene que estar antes de la fecha final ({end})",
+        "defaultlang_not_set": "No establecido idioma predeterminado",
+        "dependency_require_purchase": "Tiene que comprarse",
+        "empty": "{value} no puede estar vac\u00edo ",
+        "entity_exists": "{model} con {field} '{value}' ya existe ",
+        "equal_to": "{value} debe ser exactamente {count}",
+        "even": "{value} debe ser par",
+        "exclusion": "{value} est\u00e1 reservado",
+        "greater_than": "{value} debe ser mayor que {count}",
+        "identifier": "{value} no es un identificador v\u00e1lido",
+        "import": "No se pudo importar {model}",
+        "in_between": "{value} debe estar entre {min} y {max}",
+        "inclusion": "{value} no est\u00e1 incluido en la lista",
+        "invalid": "{value} es inv\u00e1lido ",
+        "invalid_response": "Respuesta del servidor inv\u00e1lida ",
+        "invitation_exists": "Ya existe una invitaci\u00f3n para {entity} con el correo {email}",
+        "less_than": " {value} debe ser menor que {count}",
+        "loginrequired": "Debe estar registrado para ver esta vista",
+        "no_data": "Sin datos",
+        "no_existing_user": "El usuario \"{value}\" no existe",
+        "no_options": "No hay opciones disponibles",
+        "no_storage": "Sin almac\u00e9n",
+        "noselection": "{model} no seleccionado ",
+        "not_a_address": "{value} no es un {type} v\u00e1lido de direcci\u00f3n ",
+        "not_a_date": "{value} no es una fecha v\u00e1lida",
+        "not_a_int": "{value} no es un n\u00famero entero v\u00e1lido",
+        "not_a_number": "{value} no es un n\u00famero",
+        "not_a_url": "{value} no es una URL v\u00e1lida ",
+        "not_set": "{value} no se ha establecido",
+        "odd": "{value} debe ser impar",
+        "one": "1 error no ha permitido guardar este {model}",
+        "other": "{count} errores no han permitido guardar este {model}",
+        "password": "Contrase\u00f1a no v\u00e1lida (m\u00ednimo 5 caracteres, uno en may\u00fasculas, uno en min\u00fascula y un n\u00famero)",
+        "password_no_match": "Las contrase\u00f1as no coinciden",
+        "remove": "No se pudo eliminar {model}",
+        "taken": "{value} ya se ha tomado",
+        "too_long": "{value} es demasiado largo (como m\u00e1ximo {count} caracteres)",
+        "too_short": "{value} es demasiado corto (como m\u00ednimo {count} caracteres)",
+        "update": "No se pudo actualizar {model}",
+        "wrong_length": "{value} es la longitud incorrecta (debe haber {count} caracteres)"
+    },
+    "field": {
+        "additional_user": "Usuario adicional",
+        "address": "Direcci\u00f3n ",
+        "amount": "Cantidad",
+        "app": "Aplicaci\u00f3n ",
+        "assigneduser": "Usuario asignado",
+        "author": "Autor",
+        "city": "Ciudad",
+        "company": "Empresa",
+        "confirmpassword": "Confirmar password",
+        "country": "Pa\u00eds",
+        "creationdate": "Creado",
+        "currency": "Moneda",
+        "data": "Datos",
+        "date": "Fecha",
+        "defaultlanguage": "Idioma por defecto",
+        "delta": "Diferencia",
+        "description": "Descripci\u00f3n",
+        "duedate": "Fecha de vencimiento",
+        "effort": "Despliegue",
+        "email": "Direcci\u00f3n de correo electr\u00f3nico",
+        "end": "Fin",
+        "enddate": "Fecha final",
+        "fax": "N\u00famero de fax",
+        "file": "Archivo",
+        "firstname": "Nombre",
+        "from": "De",
+        "gravatar_link": "Enlace Gravatar ",
+        "hourlyrate": "Tasa horaria",
+        "identifier": "Identificador",
+        "invite": "Invitaci\u00f3n ",
+        "itemno": "C\u00f3digo de art\u00edculo",
+        "itemnumber": "C\u00f3digo de art\u00edculo",
+        "lastmodified": "\u00daltima modificaci\u00f3n",
+        "lastname": "Apellidos",
+        "name": "Nombre",
+        "number": "N\u00famero",
+        "organization": "Organizaci\u00f3n",
+        "owner": "Usuario\/s propietario\/s",
+        "password": "Password",
+        "permission": "Permisos",
+        "personalinfo": "Informaci\u00f3n personal",
+        "phone": "N\u00famero de tel\u00e9fono ",
+        "pleaseselect": "Por favor seleccione ",
+        "priority": "Prioridad",
+        "private": "Privado",
+        "province": "Provincia",
+        "public": "Publico ",
+        "receipient": "Destinatario",
+        "reference": "Referencia",
+        "sender": "Remitente",
+        "shared": "Compartido",
+        "source": "C\u00f3digo fuente",
+        "start": "Inicio",
+        "startdate": "Fecha de inicio",
+        "state": "Estado",
+        "status": "Estatus",
+        "stocklocation": "Ubicaci\u00f3n",
+        "storage": "Almacenamiento",
+        "subject": "Asunto",
+        "surname": "Apellidos",
+        "to": "Para",
+        "transaction": "Transacci\u00f3n",
+        "transactionno": "N\u00fam. de transacci\u00f3n",
+        "transactionnumber": "N\u00famero de transacci\u00f3n",
+        "type": "Tipo",
+        "unitprice": "Precio unitario",
+        "url": "URL",
+        "user_count": "Cuenta de usuario",
+        "username": "Nombre de usuario",
+        "vat": "N\u00famero IVA",
+        "version": "Versi\u00f3n ",
+        "version_branch": "Ramificaci\u00f3n de versi\u00f3n",
+        "visibility": "Visibilidad ",
+        "website": "Sitio web",
+        "zipcode": "C\u00f3digo postal"
+    },
+    "item": {
+        "amount": null,
+        "description": null,
+        "discount": null,
+        "item": null,
+        "itemnum": null,
+        "items": null,
+        "manufacturer": null,
+        "name": null,
+        "original": null,
+        "pos": null,
+        "price": null,
+        "priceperunit": null,
+        "tax": null,
+        "total": null,
+        "unit": null
+    },
+    "lang": {
+        "code": "es",
+        "name": "Espa\u00f1ol"
+    },
+    "languages": {
+        "de_DE": "Alem\u00e1n",
+        "en_US": "Ingl\u00e9s",
+        "es_ES": "Espa\u00f1ol",
+        "fr_FR": "Franc\u00e9s",
+        "it_IT": "Italiano"
+    },
+    "message": {
+        "activate": "{model} activado",
+        "add": "{model} a\u00f1adido",
+        "change": "{model} cambiado",
+        "create": "{model} creado",
+        "deactivate": "{model} desactivado",
+        "delete": "{model} eliminado",
+        "error": "Han ocurrido los siguientes errores: ",
+        "import": "{model} importado con \u00e9xito ",
+        "invited": "{model} invitado",
+        "passwordreset": "Restablecimiento de passwords y notificaci\u00f3n enviada a su direcci\u00f3n de correo electr\u00f3nico",
+        "passwordsmustmatch": "Los passwords deben coincidir",
+        "remove": "{model} eliminados",
+        "restore": "{model} restaurados",
+        "update": "{model} actualizado"
+    },
+    "number": {
+        "currency": {
+            "format": "%u %n",
+            "precision": "2",
+            "unit": "\u20ac"
+        },
+        "delimiter": ",",
+        "separator": "-"
+    },
+    "partner": {
+        "customer": {
+            "name": "Cliente",
+            "no": "N\u00fam. de cliente",
+            "number": "N\u00famero de cliente"
+        },
+        "supplier": {
+            "name": "Proveedor",
+            "no": "N\u00fam. de proveedor",
+            "number": "N\u00famero de proveedor"
+        }
+    },
+    "priority": {
+        "high": "Alta",
+        "highest": "Muy alta",
+        "low": "Baja",
+        "lowest": "Muy baja",
+        "medium": "Media"
+    },
+    "time": {
+        "first_day_of_week": "7",
+        "format": {
+            "default": "%m\/%d\/%Y %I:%M %p",
+            "full": "%d.%m.%Y %H:%M",
+            "fullday": "%a %d.%m.%Y %H:%M",
+            "long": "%B %d, %Y %H:%M",
+            "short": "%d %b %H:%M",
+            "time": "%H:%M"
+        }
+    },
+    "transaction": {
+        "credit": {
+            "name": "Factura rectificativa",
+            "no": "N\u00fam. Abono",
+            "number": "N\u00fam. Abono"
+        },
+        "delivery": {
+            "name": "Albar\u00e1n",
+            "no": "N\u00fam. de albar\u00e1n",
+            "number": "N\u00fam. de albar\u00e1n"
+        },
+        "dunning": {
+            "name": "Aviso de pago ",
+            "no": "N\u00fam. de aviso",
+            "number": "N\u00famero de aviso"
+        },
+        "invoice": {
+            "name": "Factura",
+            "no": "N\u00fam. factura ",
+            "number": "N\u00fam. de factura"
+        },
+        "order": {
+            "name": "Pedido",
+            "no": "N\u00fam. de pedido",
+            "number": "N\u00fam. de pedido"
+        },
+        "pinvoice": {
+            "name": "Factura pro-forma",
+            "no": "N\u00fam. factura pro-forma",
+            "number": "N\u00fam. de factura pro-forma"
+        },
+        "quote": {
+            "name": "Presupuesto",
+            "no": "Presupuesto n\u00ba",
+            "number": "Presupuesto n\u00ba"
+        },
+        "scredit": {
+            "name": "Fra. rectificativa de compra",
+            "no": "N\u00fam. Abono",
+            "number": "N\u00fam. Abono"
+        },
+        "sdelivery": {
+            "name": "Entrega de compra ",
+            "no": "N\u00fam. de albar\u00e1n",
+            "number": "N\u00fam. albar\u00e1n de compra "
+        },
+        "sinvoice": {
+            "name": "Factura de compra",
+            "no": "N\u00fam. factura de compra ",
+            "number": "N\u00fam. factura de compra "
+        },
+        "sorder": {
+            "name": "Pedido de compra",
+            "no": "N\u00fam. de pedido",
+            "number": "N\u00fam. de pedido"
+        },
+        "srequest": {
+            "name": "Solicitud",
+            "no": "N\u00fam. de solicitud",
+            "number": "N\u00fam. de solicitud"
+        }
+    }
+}

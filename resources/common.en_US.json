@@ -1,0 +1,629 @@
+{
+    "action": {
+        "abort": "Abort",
+        "activate": "Enable",
+        "add": "Add",
+        "back": "Back",
+        "changepwd": "Change Password",
+        "close": "Close",
+        "complete": "Complete",
+        "confirm": "Confirm",
+        "deactivate": "Disable",
+        "delete": "Delete",
+        "edit": "Edit",
+        "execute": "Run",
+        "filter": "Filter",
+        "import": "Import",
+        "install": "Install",
+        "invite": "Invite",
+        "leave": "Leave",
+        "login": "Login",
+        "logout": "Logout",
+        "new_app": "New App",
+        "new_version": "New Version",
+        "next": "Next",
+        "notify": "Notifications",
+        "ok": "Ok",
+        "open": "Open",
+        "refresh": "Refresh",
+        "remove": "Remove",
+        "reset": "Reset",
+        "restore": "Restore",
+        "save": "Save",
+        "signup": "Sign up",
+        "submit": "Submit",
+        "update": "Update"
+    },
+    "address": {
+        "delivery": "Delivery address",
+        "invoice": "Invoice address"
+    },
+    "amount": {
+        "amount": "Amount",
+        "balance": "Balance",
+        "discount": "Discount",
+        "dunning": "Dunning fees",
+        "netamount": "Net amount",
+        "netdiscount": {
+            "excluding": "Net total (excl. discount)",
+            "including": "Net total (incl. discount)"
+        },
+        "nettotal": "Net total",
+        "paid": "Paid amount",
+        "payable": "Payment amount",
+        "subtotal": "Subtotal",
+        "tax": {
+            "addon": "plus {taxrate} % VAT",
+            "base": "Tax base amount",
+            "onamount": "plus {taxrate} % VAT on {amount}",
+            "vat": "VAT"
+        },
+        "total": "Total"
+    },
+    "common": {
+        "all": "All",
+        "condition": "Conditon",
+        "confirmation": "Confirmation",
+        "currency": "Currency",
+        "entities": "Entities",
+        "entity": "Entity",
+        "error": "Error",
+        "export": "Export",
+        "field": "Field",
+        "fields": "Fields",
+        "format": "Format",
+        "import": "Import",
+        "info": "Info",
+        "mandatory": "Mandatory",
+        "new": "new",
+        "no": "No",
+        "old": "old",
+        "permission_denied": "Permission denied!",
+        "preview": "Preview",
+        "profile": "Profile",
+        "relation": "Relation",
+        "relations": "Relations",
+        "result": "Result",
+        "results": "Results",
+        "type": "Type",
+        "warning": "Warning",
+        "yes": "Yes"
+    },
+    "confirm": {
+        "remove": "Do you really want to remove {value}",
+        "save": "Do you really want to save {value}?"
+    },
+    "currency": {
+        "eur": {
+            "char": "Eur",
+            "name": "Euro",
+            "sign": "\u20ac"
+        },
+        "usd": {
+            "char": "USD",
+            "name": "US Dollar",
+            "sign": "$"
+        }
+    },
+    "date": {
+        "abbr_day_names": [
+            "Sun",
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat"
+        ],
+        "abbr_month_names": [
+            null,
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+        ],
+        "day_names": [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+        ],
+        "format": {
+            "default": "m\/d\/Y",
+            "short": "m\/d"
+        },
+        "month_names": [
+            null,
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ]
+    },
+    "datetime": {
+        "distance_in_words": {
+            "about_x_hours": {
+                "one": "about 1 hour",
+                "other": "about {count} hours"
+            },
+            "about_x_months": {
+                "one": "about 1 month",
+                "other": "about {count} months"
+            },
+            "about_x_years": {
+                "one": "about 1 year",
+                "other": "about {count} years"
+            },
+            "almost_x_years": {
+                "one": "almost 1 year",
+                "other": "almost {count} years"
+            },
+            "half_a_minute": "half a minute",
+            "less_than_x_minutes": {
+                "one": "less than a minute",
+                "other": "less than {count} minutes"
+            },
+            "less_than_x_seconds": {
+                "one": "less than 1 second",
+                "other": "less than {count} seconds"
+            },
+            "over_x_years": {
+                "one": "over 1 year",
+                "other": "over {count} years"
+            },
+            "x_days": {
+                "one": "1 day",
+                "other": "{count} days"
+            },
+            "x_minutes": {
+                "one": "1 minute",
+                "other": "{count} minutes"
+            },
+            "x_months": {
+                "one": "1 month",
+                "other": "{count} months"
+            },
+            "x_seconds": {
+                "one": "1 second",
+                "other": "{count} seconds"
+            }
+        },
+        "unit": {
+            "day": "Day",
+            "month": "Month",
+            "year": "Year"
+        }
+    },
+    "entity": {
+        "accounts": {
+            "plural": "Accounts",
+            "singular": "Account"
+        },
+        "activity": {
+            "plural": "Activities",
+            "singular": "Activity"
+        },
+        "campaigns": {
+            "plural": "Campaigns",
+            "singular": "Campaign"
+        },
+        "cases": {
+            "plural": "Cases",
+            "singular": "Case"
+        },
+        "category": {
+            "plural": "Categories",
+            "singular": "Category"
+        },
+        "clocking": {
+            "plural": "Clocking Entries",
+            "singular": "Clocking Entry"
+        },
+        "comments": {
+            "plural": "Comments",
+            "singular": "Comment"
+        },
+        "contacts": {
+            "plural": "Contacts",
+            "singular": "Contact"
+        },
+        "contracts": {
+            "plural": "Contracts",
+            "singular": "Contract"
+        },
+        "customer": {
+            "plural": "Customers",
+            "singular": "Customer"
+        },
+        "dunning": {
+            "plural": "Dunnings",
+            "singular": "Dunning"
+        },
+        "field": {
+            "plural": "Fields",
+            "singular": "Field"
+        },
+        "groups": {
+            "plural": "Groups",
+            "singular": "Group"
+        },
+        "items": {
+            "plural": "Items",
+            "singular": "Item"
+        },
+        "language": {
+            "plural": "Languages",
+            "singular": "Language"
+        },
+        "links": {
+            "plural": "Links",
+            "singular": "Link"
+        },
+        "mailinglists": {
+            "plural": "Mailing lists",
+            "singular": "Mailinglist"
+        },
+        "mailservers": {
+            "plural": "Mail servers",
+            "singular": "Mailserver"
+        },
+        "messages": {
+            "plural": "Messages",
+            "singular": "Message"
+        },
+        "notes": {
+            "plural": "Notes",
+            "singular": "Note"
+        },
+        "opportunities": {
+            "plural": "Opportunities",
+            "singular": "Opportunity"
+        },
+        "organization": {
+            "plural": "Organizations",
+            "singular": "Organization"
+        },
+        "payments": {
+            "plural": "Payments",
+            "singular": "Payment"
+        },
+        "pricelists": {
+            "plural": "Pricelists",
+            "singular": "Pricelist"
+        },
+        "pricelists2items": {
+            "plural": "Pricelist Items",
+            "singular": "Pricelist Item"
+        },
+        "projects": {
+            "plural": "Projects",
+            "singular": "Project"
+        },
+        "serials": {
+            "plural": "Serials",
+            "singular": "Serial"
+        },
+        "stocktransactions": {
+            "plural": "Stock Transactions",
+            "singular": "Stock Transaction"
+        },
+        "storages": {
+            "plural": "Storages",
+            "singular": "Storage"
+        },
+        "tags": {
+            "plural": "Tags",
+            "singular": "Tag"
+        },
+        "tasks": {
+            "plural": "Tasks",
+            "singular": "Task"
+        },
+        "tickets": {
+            "plural": "Tickets",
+            "singular": "Ticket"
+        },
+        "transactions": {
+            "plural": "Transactions",
+            "singular": "Transaction"
+        },
+        "users": {
+            "plural": "Users",
+            "singular": "User"
+        }
+    },
+    "error": {
+        "accepted": "{value} must be accepted",
+        "add": "Could not add {model}",
+        "app_not_public": "App is not public",
+        "blank": "{value} cannot be blank",
+        "circular_dependency": "This relation would cause a circular dependency",
+        "confirm_agb": "You have to confirm the terms of service",
+        "confirmation": "{value} does not match confirmation",
+        "country_short": "{value} has to consist of two characters (e.g. EN)",
+        "create": "Could not create new {model}",
+        "date_invalid": "Invalid date",
+        "date_range": "{value} has to be in between {min} and {max}",
+        "date_start_end": "{value} has to be before end date ({end})",
+        "defaultlang_not_set": "No default language set",
+        "dependency_require_purchase": "Has to be purchased",
+        "empty": "{value} cannot be empty",
+        "entity_exists": "{model} with {field} '{value}' already exists",
+        "equal_to": "{value} must be exactly {count}",
+        "even": "{value} must be even",
+        "exclusion": "{value} is reserved",
+        "greater_than": "{value} must be greater than {count}",
+        "identifier": "{value} is no valid identifier",
+        "import": "Could not import {model}",
+        "in_between": "{value} must be inbetween {min} and {max}",
+        "inclusion": "{value} is not included in the list",
+        "invalid": "{value} is invalid",
+        "invalid_response": "Invalid server response",
+        "invitation_exists": "Invitation for e-mail {email} to {entity} already exists",
+        "less_than": "{value} must be less than {count}",
+        "loginrequired": "You have to be logged in to display this view",
+        "no_data": "No data",
+        "no_existing_user": "User \"{value}\" does not exist",
+        "no_options": "No options available",
+        "no_storage": "No storage",
+        "noselection": "No {model} selected",
+        "not_a_address": "{value} is not a valid {type} address",
+        "not_a_date": "{value} is not a valid date",
+        "not_a_int": "{value} is not a valid integer number",
+        "not_a_number": "{value} is not a number",
+        "not_a_url": "{value} is not a valid URL",
+        "not_set": "{value} is not set",
+        "odd": "{value} must be odd",
+        "one": "1 error prohibited this {model} from being saved",
+        "other": "{count} errors prohibited this {model} from being saved",
+        "password": "Invalid password",
+        "password_no_match": "Passwords do not match",
+        "remove": "Could not remove {model}",
+        "taken": "{value} has already been taken",
+        "too_long": "{value} is too long (maximum is {count} characters)",
+        "too_short": "{value} is too short (minimum is {count} characters)",
+        "update": "Could not update {model}",
+        "wrong_length": "{value} is the wrong length (should be {count} characters)"
+    },
+    "field": {
+        "additional_user": "Additional user",
+        "address": "Address",
+        "amount": "Amount",
+        "app": "Application",
+        "assigneduser": "Assigned user",
+        "author": "Author",
+        "city": "City",
+        "company": "Company",
+        "confirmpassword": "Confirm password",
+        "country": "Country",
+        "creationdate": "Created",
+        "currency": "Currency",
+        "data": "Data",
+        "date": "Date",
+        "defaultlanguage": "Default Language",
+        "delta": "Delta",
+        "description": "Description",
+        "duedate": "Due date",
+        "effort": "Effort",
+        "email": "E-mail address",
+        "end": "End",
+        "enddate": "End date",
+        "fax": "Fax number",
+        "file": "File",
+        "firstname": "First name",
+        "from": "From",
+        "gravatar_link": "Gravatar link",
+        "hourlyrate": "Hourly rate",
+        "identifier": "Identifier",
+        "invite": "Invitation",
+        "itemno": "Item no.",
+        "itemnumber": "Item number",
+        "lastmodified": "Last Modified",
+        "lastname": "Last name",
+        "name": "Name",
+        "number": "Number",
+        "organization": "Organization",
+        "owner": "Owner",
+        "password": "Password",
+        "permission": "Permission",
+        "personalinfo": "Personal information",
+        "phone": "Phone number",
+        "pleaseselect": "Please select",
+        "priority": "Priority",
+        "private": "Private",
+        "province": "Province",
+        "public": "Public",
+        "receipient": "Recipient",
+        "reference": "Reference",
+        "sender": "Sender",
+        "shared": "Shared",
+        "source": "Source code",
+        "start": "Start",
+        "startdate": "Start date",
+        "state": "State",
+        "status": "Status",
+        "stocklocation": "Location",
+        "storage": "Storage",
+        "subject": "Subject",
+        "surname": "Last name",
+        "to": "To",
+        "transaction": "Transaction",
+        "transactionno": "Transaction No.",
+        "transactionnumber": "Transaction number",
+        "type": "Type",
+        "unitprice": "Unit price",
+        "url": "URL",
+        "user_count": "User count",
+        "username": "Username",
+        "vat": "VAT ID",
+        "version": "Version",
+        "version_branch": "Branch Version",
+        "visibility": "Visibility",
+        "website": "Website",
+        "zipcode": "Zipcode"
+    },
+    "item": {
+        "amount": "Amount",
+        "description": "Description",
+        "discount": "Discount",
+        "item": "Item",
+        "itemnum": "Item no.",
+        "items": "Items",
+        "manufacturer": "Manufacturer",
+        "name": "Name",
+        "original": "According to delivery note {deliverynum} ({date})",
+        "pos": "#",
+        "price": "Price\/unit",
+        "priceperunit": "Price per unit",
+        "tax": "VAT",
+        "total": "Total",
+        "unit": "unit"
+    },
+    "lang": {
+        "code": "en",
+        "name": "English"
+    },
+    "languages": {
+        "de_DE": "German",
+        "en_US": "English",
+        "es_ES": "Spanish",
+        "fr_FR": "French",
+        "it_IT": "Italian"
+    },
+    "message": {
+        "activate": "{model} activated",
+        "add": "{model} added",
+        "change": "{model} changed successfully",
+        "create": "{model} created successfully",
+        "deactivate": "{model} deactivated",
+        "delete": "{model} deleted",
+        "error": "The following errors occurred:",
+        "import": "{model} imported successfully",
+        "invited": "{model} invited",
+        "passwordreset": "Password reset and notification sent to your email address",
+        "passwordsmustmatch": "Passwords must match",
+        "remove": "{model} removed",
+        "restore": "{model} restored",
+        "update": "{model} updated"
+    },
+    "number": {
+        "currency": {
+            "format": "%u %n",
+            "precision": "2",
+            "unit": "$"
+        },
+        "delimiter": ".",
+        "separator": ","
+    },
+    "partner": {
+        "customer": {
+            "name": "Customer",
+            "no": "Customer no.",
+            "number": "Customer number"
+        },
+        "supplier": {
+            "name": "Supplier",
+            "no": "Supplier no.",
+            "number": "Supplier number"
+        }
+    },
+    "priority": {
+        "high": "High",
+        "highest": "Highest",
+        "low": "Low",
+        "lowest": "Lowest",
+        "medium": "Medium"
+    },
+    "time": {
+        "first_day_of_week": "7",
+        "format": {
+            "default": "%m\/%d\/%Y",
+            "full": "%m\/%d\/%Y %I:%M %p",
+            "fullday": "%a %m\/%d\/%Y %I:%M %p",
+            "long": "%B %d, %Y",
+            "short": "%d %b",
+            "time": "%I:%M %p"
+        }
+    },
+    "transaction": {
+        "credit": {
+            "name": "Credit note",
+            "no": "Credit note no.",
+            "number": "Credit note number"
+        },
+        "delivery": {
+            "name": "Delivery note",
+            "no": "Delivery no.",
+            "number": "Delivery number"
+        },
+        "dunning": {
+            "name": "Payment reminder",
+            "no": "Reminder no.",
+            "number": "Reminder number"
+        },
+        "invoice": {
+            "name": "Invoice",
+            "no": "Invoice no.",
+            "number": "Invoice number"
+        },
+        "order": {
+            "name": "Order",
+            "no": "Order no.",
+            "number": "Order number"
+        },
+        "pinvoice": {
+            "name": "Pro-forma invoice",
+            "no": "PI No.",
+            "number": "PI Number"
+        },
+        "quote": {
+            "name": "Quote",
+            "no": "Quotation no.",
+            "number": "Quotation number"
+        },
+        "scredit": {
+            "name": "Supplier credit",
+            "no": "Credit note no.",
+            "number": "Cretit note number"
+        },
+        "sdelivery": {
+            "name": "Supplier delivery",
+            "no": "Delivery no.",
+            "number": "Delivery number"
+        },
+        "sinvoice": {
+            "name": "Supplier invoice",
+            "no": "Invoice no.",
+            "number": "Invoice number"
+        },
+        "sorder": {
+            "name": "Order",
+            "no": "Order no.",
+            "number": "Order number"
+        },
+        "srequest": {
+            "name": "Request",
+            "no": "Request no.",
+            "number": "Request number"
+        }
+    }
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ixml SYSTEM "https://developers.zeyos.com/schema/ixml.dtd">
+<ixml
+	xmlns="https://developers.zeyos.com/schema/ixml"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://developers.zeyos.com/schema/ixml https://developers.zeyos.com/schema/ixml.xsd">
+
+<encode:json var="LANGUAGE.Localizer.labels" var_result="jsencoded"/>
+<set var="return"><![CDATA[
+var LANG = $jsencoded;
+
+/**
+ * Returns localized text for the specified identifier.
+ *
+ * @param {String} name The locale string identifier.
+ * @param {Object} parameters Optional. The parameters to insert into the
+ *     localized string. Default is null.
+ * @returns Returns the localized string or the upper-cased identifier
+ *     prepended by a "%". Returns null if the identifier cannot be resolved.
+ * @type String|null
+ */
+function _(name, parameters) {
+	var d = LANG;
+	if ( d == null )
+		return null;
+
+	var parts = name.split('.');
+	for (var i = 0; i < parts.length; i++) {
+		d = d[parts[i]];
+		if ( d == null )
+			return name;
+	}
+
+	if ( typeof parameters == 'object' ) {
+		p = Object.clone(parameters);
+		for (var i in p) {
+			if ( p.hasOwnProperty(i) )
+				p[i] = String(p[i])
+					.replace(/&/g, '&amp;')
+					.replace(/</g, '&lt;')
+					.replace(/>/g, '&gt;')
+					.replace(/"/g, '&quot;');
+		}
+		
+		return String(d).substitute(p);
+	}
+	
+	return d;
+}
+]]></set>
+
+</ixml>

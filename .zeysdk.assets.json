@@ -1,0 +1,48 @@
+{
+  "resources": {
+    "loader": {
+      "mimetype": "application/ixml+xml",
+      "name": "Locale Loader"
+    },
+    "js": {
+      "mimetype": "application/ixml+xml",
+      "name": "JavaScript Loader"
+    },
+    "common.en_US": {
+      "mimetype": "application/json",
+      "name": "Common Language Variables (en_US)"
+    },
+    "common.de_DE": {
+      "mimetype": "application/json",
+      "name": "Common Language Variables (de_DE)"
+    },
+    "common.es_ES": {
+      "mimetype": "application/json",
+      "name": "Common Language Variables (es_ES)"
+    },
+    "billing.de_DE": {
+      "mimetype": "application/json",
+      "name": "Billing Language Variables (de_DE)"
+    },
+    "billing.en_US": {
+      "mimetype": "application/json",
+      "name": "Billing Language Variables (en_US)"
+    },
+    "billing.es_ES": {
+      "mimetype": "application/json",
+      "name": "Billing Language Variables (es_ES)"
+    },
+    "countries.de_DE": {
+      "mimetype": "application/json",
+      "name": "Countries de_DE"
+    },
+    "countries.en_US": {
+      "mimetype": "application/json",
+      "name": "Countries en_US"
+    },
+    "countries.es_ES": {
+      "mimetype": "application/json",
+      "name": "Countries es_ES"
+    }
+  }
+}

@@ -1,0 +1,629 @@
+{
+    "action": {
+        "abort": "Abbrechen",
+        "activate": "Aktivieren",
+        "add": "Hinzuf\u00fcgen",
+        "back": "Zur\u00fcck",
+        "changepwd": "Passwort \u00e4ndern",
+        "close": "Schlie\u00dfen",
+        "complete": "Abschlie\u00dfen",
+        "confirm": "Best\u00e4tigen",
+        "deactivate": "Deaktivieren",
+        "delete": "L\u00f6schen",
+        "edit": "Bearbeiten",
+        "execute": "Ausf\u00fchren",
+        "filter": "Filter",
+        "import": "Importieren",
+        "install": "Installieren",
+        "invite": "Einladen",
+        "leave": "Verlassen",
+        "login": "Login",
+        "logout": "Logout",
+        "new_app": "Neue App",
+        "new_version": "Neue Version",
+        "next": "Weiter",
+        "notify": "Benachrichtigen",
+        "ok": "Ok",
+        "open": "\u00d6ffnen",
+        "refresh": "Aktualisieren",
+        "remove": "Entfernen",
+        "reset": "Zur\u00fccksetzen",
+        "restore": "Wiederherstellen",
+        "save": "Speichern",
+        "signup": "Registrieren",
+        "submit": "Absenden",
+        "update": "Update"
+    },
+    "address": {
+        "delivery": "Lieferanschrift",
+        "invoice": "Rechnungsanschrift"
+    },
+    "amount": {
+        "amount": "Betrag",
+        "balance": "Saldo",
+        "discount": "Abgezogener Rabatt",
+        "dunning": "Mahngeb\u00fchren",
+        "netamount": "Nettobetrag",
+        "netdiscount": {
+            "excluding": "Gesamtbetrag netto (exkl. Rabatt)",
+            "including": "Gesamtbetrag netto (inkl. Rabatt)"
+        },
+        "nettotal": "Gesamtbetrag netto",
+        "paid": "Bezahlt",
+        "payable": "Zahlungsbetrag",
+        "subtotal": "Zwischensumme",
+        "tax": {
+            "addon": "zzgl. {taxrate} % MwSt.",
+            "base": "Steuerbasisbetrag",
+            "onamount": "zzgl. {taxrate} % MwSt. auf {amount}",
+            "vat": "MwSt."
+        },
+        "total": "Gesamtbetrag"
+    },
+    "common": {
+        "all": "Alle",
+        "condition": "Bedingung",
+        "confirmation": "Best\u00e4tigung",
+        "currency": "Currency",
+        "entities": "Entit\u00e4ten",
+        "entity": "Entit\u00e4t",
+        "error": "Error",
+        "export": "Export",
+        "field": "Feld",
+        "fields": "Felder",
+        "format": "Format",
+        "import": "Import",
+        "info": "Info",
+        "mandatory": "Verpflichtend",
+        "new": "neu",
+        "no": "nein",
+        "old": "alt",
+        "permission_denied": "Permission denied!",
+        "preview": "Vorschau",
+        "profile": "Profil",
+        "relation": "Verh\u00e4ltnis",
+        "relations": "Verh\u00e4ltnisse",
+        "result": "Ergebnis",
+        "results": "Ergebnisse",
+        "type": "Type",
+        "warning": "Warning",
+        "yes": "ja"
+    },
+    "confirm": {
+        "remove": "M\u00f6chten Sie {value} wirklich entfernen?",
+        "save": "M\u00f6chten Sie {value} wirklich speichern?"
+    },
+    "currency": {
+        "eur": {
+            "char": "Eur",
+            "name": "Euro",
+            "sign": "\u20ac"
+        },
+        "usd": {
+            "char": "USD",
+            "name": "US Dollar",
+            "sign": "$"
+        }
+    },
+    "date": {
+        "abbr_day_names": [
+            "So",
+            "Mo",
+            "Di",
+            "Mi",
+            "Do",
+            "Fr",
+            "Sa"
+        ],
+        "abbr_month_names": [
+            null,
+            "Jan",
+            "Feb",
+            "M\u00e4r",
+            "Apr",
+            "Mai",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Okt",
+            "Nov",
+            "Dez"
+        ],
+        "day_names": [
+            "Sonntag",
+            "Montag",
+            "Dienstag",
+            "Mittwoch",
+            "Donnerstag",
+            "Freitag",
+            "Samstag"
+        ],
+        "format": {
+            "default": "d.m.Y",
+            "short": "d.m."
+        },
+        "month_names": [
+            null,
+            "Januar",
+            "Februar",
+            "M\u00e4rz",
+            "April",
+            "Mai",
+            "Juni",
+            "Juli",
+            "August",
+            "September",
+            "Oktober",
+            "November",
+            "Dezember"
+        ]
+    },
+    "datetime": {
+        "distance_in_words": {
+            "about_x_hours": {
+                "one": "etwa 1 Stunde",
+                "other": "etwa {count} Stunden"
+            },
+            "about_x_months": {
+                "one": "etwa 1 Monat",
+                "other": "etwa {count} Monaten"
+            },
+            "about_x_years": {
+                "one": "etwa 1 Jahr",
+                "other": "etwa {count} Jahren"
+            },
+            "almost_x_years": {
+                "one": "fast 1 Jahr",
+                "other": "fast {count} Jahren"
+            },
+            "half_a_minute": "eine halbe Minute",
+            "less_than_x_minutes": {
+                "one": "weniger als 1 Minute",
+                "other": "weniger als {count} Minuten"
+            },
+            "less_than_x_seconds": {
+                "one": "weniger als 1 Sekunde",
+                "other": "weniger als {count} Sekunden"
+            },
+            "over_x_years": {
+                "one": "mehr als 1 Jahr",
+                "other": "mehr als {count} Jahren"
+            },
+            "x_days": {
+                "one": "1 Tag",
+                "other": "{count} Tagen"
+            },
+            "x_minutes": {
+                "one": "1 Minute",
+                "other": "{count} Minuten"
+            },
+            "x_months": {
+                "one": "1 Monat",
+                "other": "{count} Monaten"
+            },
+            "x_seconds": {
+                "one": "1 Sekunde",
+                "other": "{count} Sekunden"
+            }
+        },
+        "unit": {
+            "day": "Tag",
+            "month": "Monat",
+            "year": "Jahr"
+        }
+    },
+    "entity": {
+        "accounts": {
+            "plural": "Accounts",
+            "singular": "Account"
+        },
+        "activity": {
+            "plural": "Aktivit\u00e4ten",
+            "singular": "Aktivit\u00e4t"
+        },
+        "campaigns": {
+            "plural": "Kampagne",
+            "singular": "Kampagnen"
+        },
+        "cases": {
+            "plural": "Gesch\u00e4ftsf\u00e4lle",
+            "singular": "Gesch\u00e4ftsfall"
+        },
+        "category": {
+            "plural": "Kategorien",
+            "singular": "Kategorie"
+        },
+        "clocking": {
+            "plural": "Zeiteintr\u00e4ge",
+            "singular": "Zeiteintrag"
+        },
+        "comments": {
+            "plural": "Kommentare",
+            "singular": "Kommentar"
+        },
+        "contacts": {
+            "plural": "Contacts",
+            "singular": "Contact"
+        },
+        "contracts": {
+            "plural": "Vertr\u00e4ge",
+            "singular": "Vertrag"
+        },
+        "customer": {
+            "plural": "Kunden",
+            "singular": "Kunde"
+        },
+        "dunning": {
+            "plural": "Mahnungen",
+            "singular": "Mahnung"
+        },
+        "field": {
+            "plural": "Felder",
+            "singular": "Feld"
+        },
+        "groups": {
+            "plural": "Gruppen",
+            "singular": "Gruppe"
+        },
+        "items": {
+            "plural": "Items",
+            "singular": "Item"
+        },
+        "language": {
+            "plural": "Sprachen",
+            "singular": "Sprache"
+        },
+        "links": {
+            "plural": "Links",
+            "singular": "Link"
+        },
+        "mailinglists": {
+            "plural": "Mailinglisten",
+            "singular": "Mailingliste"
+        },
+        "mailservers": {
+            "plural": "Mailserver",
+            "singular": "Mailserver"
+        },
+        "messages": {
+            "plural": "Nachrichten",
+            "singular": "Nachricht"
+        },
+        "notes": {
+            "plural": "Notizen",
+            "singular": "Notiz"
+        },
+        "opportunities": {
+            "plural": "Gelegenheiten",
+            "singular": "Gelegenheit"
+        },
+        "organization": {
+            "plural": "Organisationen",
+            "singular": "Organisation"
+        },
+        "payments": {
+            "plural": "Zahlungen",
+            "singular": "Zahlung"
+        },
+        "pricelists": {
+            "plural": "Preislisten",
+            "singular": "Pricelist"
+        },
+        "pricelists2items": {
+            "plural": "Pricelist Items",
+            "singular": "Pricelist Item"
+        },
+        "projects": {
+            "plural": "Projekte",
+            "singular": "Projekt"
+        },
+        "serials": {
+            "plural": "Seriennummern",
+            "singular": "Seriennummer"
+        },
+        "stocktransactions": {
+            "plural": "Lagerbuchungen",
+            "singular": "Lagerbuchung"
+        },
+        "storages": {
+            "plural": "Lager",
+            "singular": "Lager"
+        },
+        "tags": {
+            "plural": "Tags",
+            "singular": "Tag"
+        },
+        "tasks": {
+            "plural": "Aufgaben",
+            "singular": "Aufgabe"
+        },
+        "tickets": {
+            "plural": "Tickets",
+            "singular": "Ticket"
+        },
+        "transactions": {
+            "plural": "Transaktionen",
+            "singular": "Transaktion"
+        },
+        "users": {
+            "plural": "Benutzer",
+            "singular": "Benutzer"
+        }
+    },
+    "error": {
+        "accepted": "{value} muss akzeptiert werden",
+        "add": "{model} konnte nicht hinzugef\u00fcgt werden",
+        "app_not_public": "App ist nicht \u00f6ffentlich",
+        "blank": "{value} muss ausgef\u00fcllt werden",
+        "circular_dependency": "Diese Beziehung w\u00fcrde eine zyklische Abh\u00e4ngigkeit erzeugen",
+        "confirm_agb": "Sie m\u00fcssen unsere AGB akzeptieren",
+        "confirmation": "{value} stimmt nicht mit der Best\u00e4tigung \u00fcberein",
+        "country_short": "{value} muss zwei Zeichen haben (DE)",
+        "create": "{model} konnte nicht erzeugt werden",
+        "date_invalid": "Datumsangabe ung\u00fcltig",
+        "date_range": "{value} muss im Zeitraum {min} - {max} liegen",
+        "date_start_end": "{value} muss vor dem Enddatum ({end}) liegen",
+        "defaultlang_not_set": "Standardsprache nicht gesetzt",
+        "dependency_require_purchase": "Muss gekauft werden",
+        "empty": "{value} muss ausgef\u00fcllt werden",
+        "entity_exists": "{model} mit {field} '{value}' existiert bereits",
+        "equal_to": "{value} muss genau {count} sein",
+        "even": "{value} muss gerade sein",
+        "exclusion": "{value} ist nicht verf\u00fcgbar",
+        "greater_than": "{value} muss gr\u00f6\u00dfer als {count} sein",
+        "identifier": "{value} ist kein g\u00fcltiger Identifier",
+        "import": "{model} konnte nicht importiert werden",
+        "in_between": "{value} muss zwischen {min} und {max} liegen",
+        "inclusion": "{value} ist kein g\u00fcltiger Wert",
+        "invalid": "{value} ist nicht g\u00fcltig",
+        "invalid_response": "Ung\u00fcltige Serverantwort",
+        "invitation_exists": "Einladung der Email '{email}' zu {entity} existiert bereits",
+        "less_than": "{value} muss kleiner als {count} sein",
+        "loginrequired": "F\u00fcr diese Ansicht m\u00fcssen Sie eingeloggt sein",
+        "no_data": "Keine Daten",
+        "no_existing_user": "\"{value}\" ist kein existierender User",
+        "no_options": "Keine Optionen verf\u00fcgbar",
+        "no_storage": "Kein Lager",
+        "noselection": "Kein {model} ausgew\u00e4hlt",
+        "not_a_address": "{value} ist keine g\u00fcltige {type}Adresse",
+        "not_a_date": "{value} ist kein g\u00fcltiges Datum",
+        "not_a_int": "{value} ist kein g\u00fcltiger Integer-Wert",
+        "not_a_number": "{value} ist keine Zahl",
+        "not_a_url": "{value} ist keine g\u00fcltige URL",
+        "not_set": "{value} ist nicht gesetzt",
+        "odd": "{value} muss ungerade sein",
+        "one": "Dieses {model}-Objekt konnte nicht gespeichert werden: {count} Fehler.",
+        "other": "Dieses {model}-Objekt konnte nicht gespeichert werden: {count} Fehler.",
+        "password": "Ung\u00fcltiges Passwort. (Min. 5 Zeichen, ein Gro\u00dfbuchstabe, ein Kleinbuchstabe, eine Zahl)",
+        "password_no_match": "Passw\u00f6rter stimmen nicht \u00fcberein",
+        "remove": "{model} konnte nicht entfernt werden",
+        "taken": "{value} ist bereits vergeben",
+        "too_long": "{value} ist zu lang (max. {count} Zeichen)",
+        "too_short": "{value} ist zu kurz (min. {count} Zeichen)",
+        "update": "{model} konnte nicht aktualisiert werden",
+        "wrong_length": "Die Zeichenl\u00e4nge von {value} muss {count} Zeichen betragen"
+    },
+    "field": {
+        "additional_user": "Zus\u00e4tzliche User",
+        "address": "Adresse",
+        "amount": "Anzahl",
+        "app": "Anwendung",
+        "assigneduser": "Bearbeiter",
+        "author": "Author",
+        "city": "Stadt",
+        "company": "Firma",
+        "confirmpassword": "Passwort best\u00e4tigen",
+        "country": "Land",
+        "creationdate": "Erstellt",
+        "currency": "W\u00e4hrung",
+        "data": "Daten",
+        "date": "Datum",
+        "defaultlanguage": "Standard-Sprache",
+        "delta": "Delta",
+        "description": "Beschreibung",
+        "duedate": "F\u00e4lligkeitsdatum",
+        "effort": "Aufwand",
+        "email": "E-Mail-Adresse",
+        "end": "Ende",
+        "enddate": "Enddatum",
+        "fax": "Faxnummer",
+        "file": "Datei",
+        "firstname": "Vorname",
+        "from": "Von",
+        "gravatar_link": "Gravatar-Link",
+        "hourlyrate": "Stundensatz",
+        "identifier": "Identifier",
+        "invite": "Einladung",
+        "itemno": "Artikelnr.",
+        "itemnumber": "Artikelnummer",
+        "lastmodified": "Zuletzt ge\u00e4ndert",
+        "lastname": "Nachname",
+        "name": "Name",
+        "number": "Nummer",
+        "organization": "Organisation",
+        "owner": "Eigent\u00fcmer",
+        "password": "Passwort",
+        "permission": "Zugriffserlaubnis",
+        "personalinfo": "Pers\u00f6nliche Angaben",
+        "phone": "Telefonnummer",
+        "pleaseselect": "Bitte ausw\u00e4hlen",
+        "priority": "Priorit\u00e4t",
+        "private": "Privat",
+        "province": "Bezirk",
+        "public": "\u00d6ffentlich",
+        "receipient": "Empf\u00e4nger",
+        "reference": "Referenz",
+        "sender": "Absender",
+        "shared": "Geteilt",
+        "source": "Quelltext",
+        "start": "Start",
+        "startdate": "Startdatum",
+        "state": "Bundesland",
+        "status": "Status",
+        "stocklocation": "Lagerplatz",
+        "storage": "Lager",
+        "subject": "Betreff",
+        "surname": "Nachname",
+        "to": "An",
+        "transaction": "Vorgang",
+        "transactionno": "Vorgangsnr.",
+        "transactionnumber": "Vorgangsnummer",
+        "type": "Type",
+        "unitprice": "Einzelpreis",
+        "url": "URL",
+        "user_count": "Anzahl Benutzer",
+        "username": "Nutzername",
+        "vat": "Steuernummer",
+        "version": "Version",
+        "version_branch": "Branch Version",
+        "visibility": "Visibility",
+        "website": "Website",
+        "zipcode": "Postleitzahl"
+    },
+    "item": {
+        "amount": "Menge",
+        "description": "Beschreibung",
+        "discount": "Rabatt",
+        "item": "Artikel",
+        "itemnum": "Art.-Nr.",
+        "items": "Artikel",
+        "manufacturer": "Hersteller",
+        "name": "Name",
+        "original": "Gem\u00e4\u00df Lieferschein {deliverynum} vom {date}",
+        "pos": "Pos.",
+        "price": "Einzelpreis",
+        "priceperunit": "Preis pro Einheit",
+        "tax": "MwSt.",
+        "total": "Gesamt",
+        "unit": "Einheit"
+    },
+    "lang": {
+        "code": "de",
+        "name": "Deutsch"
+    },
+    "languages": {
+        "de_DE": "Deutsch",
+        "en_US": "Englisch",
+        "es_ES": "Spanisch",
+        "fr_FR": "Franz\u00f6sisch",
+        "it_IT": "Italienisch"
+    },
+    "message": {
+        "activate": "{model} aktiviert",
+        "add": "{model} hinzugef\u00fcgt",
+        "change": "{model} erfolgreich ge\u00e4ndert",
+        "create": "{model} erfolgreich erstellt",
+        "deactivate": "{model} deaktiviert",
+        "delete": "{model} gel\u00f6scht",
+        "error": "Folgende Fehler sind aufgetreten:",
+        "import": "{model} erfolgreich importiert",
+        "invited": "{model} eingeladen",
+        "passwordreset": "Ihr Passwort wurde zur\u00fcckgesetzt und eine E-Mail mit dem neuen Passwort zugestellt.",
+        "passwordsmustmatch": "Passw\u00f6rter m\u00fcssen \u00fcbereinstimmen",
+        "remove": "{model} entfert",
+        "restore": "{model} wiederherstellt",
+        "update": "{model} gespeichert"
+    },
+    "number": {
+        "currency": {
+            "format": "%n %u",
+            "precision": "2",
+            "unit": "\u20ac"
+        },
+        "delimiter": ",",
+        "separator": "."
+    },
+    "partner": {
+        "customer": {
+            "name": "Kunde",
+            "no": "Kundennr.",
+            "number": "Kundennummer"
+        },
+        "supplier": {
+            "name": "Lieferant",
+            "no": "Lieferantennr.",
+            "number": "Lieferantennummer"
+        }
+    },
+    "priority": {
+        "high": "Hoch",
+        "highest": "Am h\u00f6chsten",
+        "low": "Niedrig",
+        "lowest": "Am niedrigsten",
+        "medium": "Mittel"
+    },
+    "time": {
+        "first_day_of_week": "1",
+        "format": {
+            "default": "%d.%m.%Y",
+            "full": "%d.%m.%Y %H:%M",
+            "fullday": "%a %d.%m.%Y %H:%M",
+            "long": "%B %m, %Y",
+            "short": "%d.%m.",
+            "time": "%H:%M"
+        }
+    },
+    "transaction": {
+        "credit": {
+            "name": "Gutschrift",
+            "no": "Gutschriftnr.",
+            "number": "Gutschriftsnummer"
+        },
+        "delivery": {
+            "name": "Lieferschein",
+            "no": "Lieferscheinnr.",
+            "number": "Lieferscheinnummer"
+        },
+        "dunning": {
+            "name": "Mahnung",
+            "no": "Mahnungsnr.",
+            "number": "Mahnungsnummer"
+        },
+        "invoice": {
+            "name": "Rechnung",
+            "no": "Rechnungsnr.",
+            "number": "Rechnungsnummer"
+        },
+        "order": {
+            "name": "Auftrag",
+            "no": "Auftragsnr.",
+            "number": "Auftragsnummer"
+        },
+        "pinvoice": {
+            "name": "Proformarechnung",
+            "no": "Vorgangsnr.",
+            "number": "Vorgangsnummer"
+        },
+        "quote": {
+            "name": "Angebot",
+            "no": "Angebotsnr.",
+            "number": "Angebotsnummer"
+        },
+        "scredit": {
+            "name": "Lieferantengutschrift",
+            "no": "Gutschriftnr.",
+            "number": "Gutschriftsnummer"
+        },
+        "sdelivery": {
+            "name": "Eingangslieferung",
+            "no": "Lieferscheinnr.",
+            "number": "Lieferscheinnummer"
+        },
+        "sinvoice": {
+            "name": "Eingangsrechnung",
+            "no": "Rechnungsnr.",
+            "number": "Rechnungsnummer"
+        },
+        "sorder": {
+            "name": "Bestellung",
+            "no": "Bestellnr.",
+            "number": "Bestellnummer"
+        },
+        "srequest": {
+            "name": "Anfrage",
+            "no": "Anfrage Nr.",
+            "number": "Anfrage Nummer"
+        }
+    }
+}

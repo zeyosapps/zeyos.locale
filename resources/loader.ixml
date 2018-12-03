@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ixml SYSTEM "https://developers.zeyos.com/schema/ixml.dtd">
+<ixml
+	xmlns="https://developers.zeyos.com/schema/ixml"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://developers.zeyos.com/schema/ixml https://developers.zeyos.com/schema/ixml.xsd">
+
+<!-- Initialization -->
+<macro var="initialize">
+	<is type="undefined" var="noinit">
+		<is var="lang" type="undefined">
+			<session var="session" />
+			<set var="lang">$session.data.lang</set>
+		</is>
+		<new class="LANGUAGE.Class" var="LANGUAGE.Localizer">
+			<param name="lang" var="lang" />
+			<param name="default" var="default" />
+			<param name="accepted" var="accepted" />
+		</new>
+		
+		<is var="load" type="string">
+			<array var="load">
+				<item>$load</item>
+			</array>
+		</is>
+		<is var="load" type="array">
+			<foreach var="load" var_value="src">
+				<call func="LANGUAGE.Localizer.merge">
+					<param var="src" />
+				</call>
+			</foreach>
+		</is>
+		
+		<set var="return">$LANGUAGE.Localizer.lang</set>
+	</is>
+</macro>
+
+<!--
+	## SHORT CALL ##
+	This method is a shortcut to LANGUAGE_CLASS.get() for convencience.
+
+	Use:
+		$L(test.label)
+			==
+		<call func="LANGUAGE.Class.get">
+			<param name="label">test.label</param>
+		</call>
+
+		***********
+
+		$L(test.label, {"replace": "with", "example": "showing"})
+			==
+		<array var="params">
+			<item key="replace">with</item>
+			<item key="example">showing</item>
+		</array>
+		<call func="LANGUAGE.Localizer.get">
+			<param name="label">test.label</param>
+			<param name="replace" var="params" />
+		</call>
+-->
+<global var="L" />
+<function var="L">
+	<is var="return" type="empty">
+		<call func="LANGUAGE.Localizer.get" var="return">
+			<param name="label" var="label" />
+			<param name="replace" var="replace" />
+		</call>
+	<else>
+		<set var="pattern">/([^,]+),[^{]*({[^}]+\})/</set>
+		<match var="count" var_matches="matches" pattern="$pattern">$return</match>
+		<if value1="$count" func="=" value2="1">
+			<try>
+	 			<decode:json var="params" >$matches[0][2]</decode:json>
+	 			<catch var="error">
+	 				<error>$error while decoding JSON params resolving language label &gt;$return&lt;</error>
+	 			</catch>
+	 		</try>
+
+			<call func="LANGUAGE.Localizer.get" var="return">
+				<param name="label" var="matches[0][1]" />
+				<param name="replace" var="params" />
+			</call>
+ 		<else>
+			<call func="LANGUAGE.Localizer.get" var="return">
+				<param name="label" var="return" />
+			</call>
+ 		</else>
+		</if>
+	</else>
+	</is>
+</function>
+
+<!--
+	Returns an iXML compatible date format
+-->
+<global var="F" />
+<function var="F">
+	<array var="vars">
+		<item key="a">D</item>		<!-- short day ("Mon", "Tue") -->
+		<item key="A">l</item>		<!-- full day ("Monday") -->
+		<item key="b">M</item>		<!-- short month ("Jan", "Feb") -->
+		<item key="B">F</item>		<!-- full month ("January") -->
+		<item key="d">d</item>		<!-- the date to two digits (01, 05, etc) -->
+		<item key="e">j</item>		<!-- the date as one digit (1, 5, 12, etc) -->
+		<item key="H">H</item>		<!-- the hour to two digits in military time (24 hr mode) (00, 11, 14, etc) -->
+		<item key="I">h</item>		<!-- the hour as a decimal number using a 12-hour clock (range 01 to 12). -->
+		<item key="j">z</item>		<!-- the day of the year to three digits (001 to 366, is Jan 1st) -->
+		<item key="k">G</item>		<!-- the hour (24-hour clock) as a digit (range 0 to 23). Single digits are preceded by a blank space. -->
+		<item key="l">g</item>		<!-- the hour (12-hour clock) as a digit (range 1 to 12). Single digits are preceded by a blank space. -->
+		<item key="m">m</item>		<!-- the numerical month to two digits (01 is Jan, 12 is Dec) -->
+		<item key="M">i</item>		<!-- the minutes to two digits (01, 40, 59) -->
+		<item key="o">S</item>		<!-- the ordinal of the day of the month in the current language ("st" for the 1st, "nd" for the 2nd, etc.) -->
+		<item key="p">A</item>		<!-- the current language equivalent of either AM or PM -->
+		<item key="s">U</item>		<!-- the Unix Epoch Time timestamp -->
+		<item key="S">s</item>		<!-- the seconds to two digits (01, 40, 59) -->
+		<item key="T">H:i:s</item>	<!-- the time as %H:%M:%S -->
+		<item key="U">W</item>		<!-- the week to two digits (01 is the week of Jan 1, 52 is the week of Dec 31) -->
+		<item key="w">w</item>		<!-- the numerical day of the week, one digit (0 is Sunday, 1 is Monday) -->
+		<item key="y">y</item>		<!-- the short year (two digits; "07") -->
+		<item key="Y">Y</item>		<!-- the full year (four digits; "2007") -->
+		<item key="z">G</item>		<!-- the GMT offset ("-0800") -->
+	</array>
+	<set var="return">$L($return)</set>
+	<foreach var="vars" var_key="key" var_value="value">
+		<replace var="return" value="%$key" replacement="$value">$return</replace>
+	</foreach>
+</function>
+
+<!--
+	Language class
+-->
+<global var="LANGUAGE" />
+<class var="LANGUAGE.Class">
+
+	<property name="default">en_US</property>
+	<property name="lang">en_US</property>
+	<property name="fillGaps">1</property>
+
+	<!--
+		Create localizer of one language.
+
+		@param {string} lang      The localizer language (default: en_US)
+		@param {string} default   The default language (default: en_US)
+		@param {array}  accepted  Accepted languages
+	-->
+	<constructor>
+		<array var="this.labels" />
+		
+		<is var="accepted" type="array">
+			<assign var="this.accepted" var_source="accepted" />
+		<else>
+			<array var="this.accepted">
+				<item>en_US</item>
+				<item>de_DE</item>
+				<item>es_ES</item>
+			</array>
+		</else>
+		</is>
+		
+		<is var="fillGaps">
+			<set var="this.fillGaps">$fillGaps</set>
+		</is>
+		
+		<is var="default">
+			<set var="check">$this.checkLang($default)</set>
+			<if value1="$check" func="!=">
+				<set var="this.default">$check</set>
+			</if>
+		</is>
+		<is var="lang">
+			<set var="check">$this.checkLang($lang)</set>
+			<if value1="$check" func="!=">
+				<set var="this.lang">$check</set>
+			</if>
+		</is>
+	</constructor>
+
+	<method name="checkLang">
+		<if value1="$return" value2="/^[a-z]{2}_[A-Z]{2}$/" func="~">
+			<array:valueexists var="this.accepted" var_result="check">$return</array:valueexists>
+			<is var="check">
+				<return />
+			</is>
+		</if>
+		
+		<foreach var="this.accepted" var_value="accepted">
+			<substr length="2" var="check">$accepted</substr>
+			<if value1="$check" value2="$return">
+				<set var="return">$accepted</set>
+				<return />
+			</if>
+		</foreach>
+		
+		<set var="return" />
+	</method>
+
+	<!--
+		Validates and returns a language code
+		
+		@inline
+		@return {string}
+	-->
+	<method name="getLang">
+		<if value1="$return">
+			<set var="return">$this.lang</set>
+		</if>
+		<if value1="$return">
+			<set var="return">$this.default</set>
+		</if>
+		
+		<array:valueexists var="this.accepted" var_result="check">$return</array:valueexists>
+		<is var="check" type="null">
+			<null var="return" />
+		</is>
+	</method>
+	
+	<!--
+		Checks, if a locale resource exists
+		
+		@inline
+		@return {1:null}
+	-->
+	<method name="localeExists">
+		<if value1="$return">
+			<return />
+		</if>
+		<db:select var_result="check" type="single">
+			<db:fields>
+				<db:field>ID</db:field>
+			</db:fields>
+			<db:table>resources</db:table>
+			<db:is field="identifier">$return</db:is>
+		</db:select>
+		<if value1="$check[0]" func="!=">
+			<set var="return">1</set>
+		</if>
+	</method>
+	
+	<!--
+		Load language file. Language files are expected to be a resource as and
+		called like the language loaded. Example: de, en etc.
+
+		@param {string} src    The application of which you want to load the language file. (default: $SELFNS)
+		@param {string} lang   The language code (default: this.lang)
+		@param {bool}   merge  Perform a fully recursive merge (default: false)
+	-->
+	<method name="load">
+		<if value1="$src">
+			<set var="src">$SELFNS</set>
+		</if>
+		
+		<set var="lang">$this.getLang($lang)</set>
+		<if value1="$lang">
+			<return />
+		</if>
+		
+		<try>
+			<include id="$src$.$lang" var="locale" />
+			<debug:output>Locale loaded $src$.$lang</debug:output>
+		<catch var="err">
+			<debug:output>Failed to include locale: $src$.$lang</debug:output>
+			<set var="return" />
+			<return />
+		</catch>
+		</try>
+
+		<call func="this.mergeLang">
+			<param name="src" var="locale" />
+			<param name="merge">$merge</param>
+		</call>
+		
+		<set var="return">$src$.$lang</set>
+	</method>
+	
+	<!--
+		Performs a merged include - the default language is loaded before the target language, 
+		in case there are gaps in the selected language
+		
+		@param {string} src  The application identifier to merge with the already loaded labels.
+		@param {array}  var
+	-->
+	<method name="merge">
+		<if value1="$this.fillGaps" value2="1">
+			<if value1="$this.default" value2="$this.getLang($lang)" func="!=">
+				<call func="this.load">
+					<param name="src" var="src" />
+					<param name="lang">$this.default</param>
+					<param name="merge">1</param>
+				</call>
+			</if>
+		</if>
+		<call func="this.load" var="resource">
+			<param var="src" />
+			<param var="lang" />
+			<param name="merge">1</param>
+		</call>
+	</method>
+
+	<!--
+		Merges a locale resource into the local language store (this.labels)
+		
+		@param {string|array} src    The resource identifier or the language variable itself
+		@param {string}       lang   The language to load if "src" is not an array. (default: this.lang)
+		@param {bool}         merge  Perform a fully recursive merge (default: false)
+	-->
+	<method name="mergeLang">
+		<is var="src" type="non-array">
+			<debug:output>Locale.mergeLang: Include $src$.$this.getLang($lang)</debug:output>
+			<include id="$src$.$this.getLang($lang)" type="resource" var="src" />
+		</is>
+
+		<if value1="$merge" value2="1">
+			<call func="this.mergeArray" var="this.labels">
+				<param name="var" var="this.labels" />
+				<param name="var_merge" var="src" />
+			</call>
+		<else>
+			<array:concat var="this.labels" var_tail="src" />
+		</else>
+		</if>
+	</method>
+	
+	<!--
+		Merges two arrays recursively
+	
+		@param {bool} noinit If $noinit isset this service does not initialize itself
+		@param {string} default: The default language (default: en_US)
+		@param {array} accepted: Array of accepted languages
+	-->
+	<method name="mergeArray">
+		<clone var="var" var_result="return" />
+	
+		<foreach var="var_merge" var_key="key" var_value="value">
+			<is var="value" type="array">
+				<call func="this.mergeArray" var="value">
+					<param name="var" var="return[$key]"/>
+					<param name="var_merge" var="value"/>
+				</call>
+			</is>
+	
+			<assign var="return[$key]" var_source="value"/>
+		</foreach>
+	</method>
+	
+
+	<!--
+		Return a language variable
+
+		@param {string} label    The locale path, e.g. "field.value"
+		@param {array}  replace  Placeholder replacements
+	-->
+	<method name="get">
+		<split delimiter="." var="e">$label</split>
+
+		<assign var="r" var_source="this.labels"/>
+		<foreach var="e" var_value="l">
+			<is type="undefined" var="r[$l]">
+				<set var="return">$label</set>
+				<return />
+			<else>
+				<assign var="r" var_source="r[$l]"/>
+			</else>
+			</is>
+		</foreach>
+
+		<is type="defined" var="replace">
+			<call func="this.substitute" var="return">
+				<param name="label" var="r" />
+				<param name="replace" var="replace" />
+			</call>
+		<else>
+			<set var="return">$r</set>
+		</else>
+		</is>
+	</method>
+
+	<!--
+		Get text from label replacing params with given text.
+
+		@param {string} label    The label to replace.
+		@param {array}  replace  The params to replace.
+	-->
+	<!-- private --><method name="substitute">
+		<match var="count" var_matches="matches" pattern="/{([^{}]+)}/i">$label</match>
+		<if value1="$count" func="&gt;" value2="0">
+	 		<foreach var="matches" var_value="match">
+	 			<call func="this.get" var="replacement"><param name="label">$replace[$match[1]]</param></call>
+	 			<replace value="$match[0]" replacement="$replacement" var="label">$label</replace>
+	 		</foreach>
+		</if>
+
+		<set var="return">$label</set>
+	</method>
+</class>
+
+<expand macro="initialize" />
+
+</ixml>
+
