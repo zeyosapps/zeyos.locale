@@ -1,7 +1,9 @@
 {
     "address": {
         "delivery": "Delivery address",
-        "invoice": "Invoice address"
+        "showDeliveryAddress": "Show delivery address",
+        "invoice": "Invoice address",
+        "showInvoiceAddress": "Show invoice address"
     },
     "amount": {
         "amount": "Amount",

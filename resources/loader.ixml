@@ -17,7 +17,7 @@
 			<param name="default" var="default" />
 			<param name="accepted" var="accepted" />
 		</new>
-		
+
 		<is var="load" type="string">
 			<array var="load">
 				<item>$load</item>
@@ -30,7 +30,7 @@
 				</call>
 			</foreach>
 		</is>
-		
+
 		<set var="return">$LANGUAGE.Localizer.lang</set>
 	</is>
 </macro>
@@ -146,7 +146,7 @@
 	-->
 	<constructor>
 		<array var="this.labels" />
-		
+
 		<is var="accepted" type="array">
 			<assign var="this.accepted" var_source="accepted" />
 		<else>
@@ -157,11 +157,11 @@
 			</array>
 		</else>
 		</is>
-		
+
 		<is var="fillGaps">
 			<set var="this.fillGaps">$fillGaps</set>
 		</is>
-		
+
 		<is var="default">
 			<set var="check">$this.checkLang($default)</set>
 			<if value1="$check" func="!=">
@@ -183,7 +183,7 @@
 				<return />
 			</is>
 		</if>
-		
+
 		<foreach var="this.accepted" var_value="accepted">
 			<substr length="2" var="check">$accepted</substr>
 			<if value1="$check" value2="$return">
@@ -191,13 +191,13 @@
 				<return />
 			</if>
 		</foreach>
-		
+
 		<set var="return" />
 	</method>
 
 	<!--
 		Validates and returns a language code
-		
+
 		@inline
 		@return {string}
 	-->
@@ -208,16 +208,16 @@
 		<if value1="$return">
 			<set var="return">$this.default</set>
 		</if>
-		
+
 		<array:valueexists var="this.accepted" var_result="check">$return</array:valueexists>
 		<is var="check" type="null">
 			<null var="return" />
 		</is>
 	</method>
-	
+
 	<!--
 		Checks, if a locale resource exists
-		
+
 		@inline
 		@return {1:null}
 	-->
@@ -236,7 +236,7 @@
 			<set var="return">1</set>
 		</if>
 	</method>
-	
+
 	<!--
 		Load language file. Language files are expected to be a resource as and
 		called like the language loaded. Example: de, en etc.
@@ -249,12 +249,12 @@
 		<if value1="$src">
 			<set var="src">$SELFNS</set>
 		</if>
-		
+
 		<set var="lang">$this.getLang($lang)</set>
 		<if value1="$lang">
 			<return />
 		</if>
-		
+
 		<try>
 			<include id="$src$.$lang" var="locale" />
 			<debug:output>Locale loaded $src$.$lang</debug:output>
@@ -269,14 +269,14 @@
 			<param name="src" var="locale" />
 			<param name="merge">$merge</param>
 		</call>
-		
+
 		<set var="return">$src$.$lang</set>
 	</method>
-	
+
 	<!--
-		Performs a merged include - the default language is loaded before the target language, 
+		Performs a merged include - the default language is loaded before the target language,
 		in case there are gaps in the selected language
-		
+
 		@param {string} src  The application identifier to merge with the already loaded labels.
 		@param {array}  var
 	-->
@@ -299,7 +299,7 @@
 
 	<!--
 		Merges a locale resource into the local language store (this.labels)
-		
+
 		@param {string|array} src    The resource identifier or the language variable itself
 		@param {string}       lang   The language to load if "src" is not an array. (default: this.lang)
 		@param {bool}         merge  Perform a fully recursive merge (default: false)
@@ -320,17 +320,17 @@
 		</else>
 		</if>
 	</method>
-	
+
 	<!--
 		Merges two arrays recursively
-	
+
 		@param {bool} noinit If $noinit isset this service does not initialize itself
 		@param {string} default: The default language (default: en_US)
 		@param {array} accepted: Array of accepted languages
 	-->
 	<method name="mergeArray">
 		<clone var="var" var_result="return" />
-	
+
 		<foreach var="var_merge" var_key="key" var_value="value">
 			<is var="value" type="array">
 				<call func="this.mergeArray" var="value">
@@ -338,11 +338,11 @@
 					<param name="var_merge" var="value"/>
 				</call>
 			</is>
-	
+
 			<assign var="return[$key]" var_source="value"/>
 		</foreach>
 	</method>
-	
+
 
 	<!--
 		Return a language variable
@@ -397,4 +397,3 @@
 <expand macro="initialize" />
 
 </ixml>
-

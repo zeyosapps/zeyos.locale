@@ -1,7 +1,9 @@
 {
     "address": {
         "delivery": "Lieferanschrift",
-        "invoice": "Rechnungsanschrift"
+        "showDeliveryAddress": "Lieferanschrift anzeigen",
+        "invoice": "Rechnungsanschrift",
+        "showInvoiceAddress": "Rechnungsanschrift anzeigen"
     },
     "amount": {
         "amount": "Betrag",
