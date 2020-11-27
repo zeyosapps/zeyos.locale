@@ -322,6 +322,10 @@
             "plural": "Serials",
             "singular": "Serial"
         },
+        "charges": {
+            "plural": "Charges",
+            "singular": "Charge"
+        },
         "stocktransactions": {
             "plural": "Stock Transactions",
             "singular": "Stock Transaction"

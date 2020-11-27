@@ -1,0 +1,218 @@
+{
+    "address": {
+      "delivery": "Adres dostawy",
+      "invoice": "Adres do Faktury"
+    },
+    "amount": {
+      "amount": "Ilość",
+      "balance": "Saldo",
+      "discount": "Rabat",
+      "dunning": "Dunning fees",
+      "netamount": "Kwota netto",
+      "netdiscount": {
+        "excluding": "Suma netto (bez rabatu)",
+        "including": "Kwota netto (po rabacie)"
+      },
+      "nettotal": "Razem netto",
+      "paid": "Zapłacona kwota",
+      "payable": "Kwota do zapłaty",
+      "subtotal": "Suma częściowa",
+      "tax": {
+        "addon": "plus {taxrate}% VAT",
+        "base": "Kwota podstawy opodatkowania",
+        "onamount": "plus {taxrate}% VAT od {amount}",
+        "vat": "VAT"
+      },
+      "total": "Całkowita"
+    },
+    "bank": {
+      "account": "Nr konta:",
+      "bank": "Nazwa banku",
+      "bankcode": "Kod banku",
+      "bic": "BIC",
+      "debit": "Kwotę płatności obciążymy następujący rachunek bankowy",
+      "details": "Bank",
+      "iban": "IBAN",
+      "subject": "Podmiot",
+      "transfer": "Przelej kwotę płatności na nasz bank korespondent"
+    },
+    "conditions": {
+      "currency": "Wszystkie ceny podane są w {currency}",
+      "delivery": "Warunki dostawy",
+      "method": "Forma płatności",
+      "payment": "Warunki płatności",
+      "shipping": "Wysyłka"
+    },
+    "date": {
+      "full": "R-m-d",
+      "short": "m-d"
+    },
+    "dialog": {
+      "attach": "Utwórz PDF",
+      "email": "Wyślij e-mail",
+      "email_template": "Szablon wiadomości e-mail",
+      "hidegross": "Ukryj kwotę podatku",
+      "hidesubtotals": "Ukryj sumy częściowe",
+      "hidetotal": "Ukryj sumy",
+      "print": "Generuj PDF",
+      "printblank": "Wydrukuj puste",
+      "printout": "Wydruk",
+      "showdiscounts": "Pokaż rabaty",
+      "template": {
+        "confirm": "Czy na pewno chcesz usunąć szablon \"{name}\"?",
+        "default": "Ustaw jako domyślne",
+        "insert": "Wstaw szablon",
+        "remove": "Usuń szablon",
+        "save": "Zachowaj szablon",
+        "template": "Szablon"
+      }
+    },
+    "dunning": {
+      "list": {
+        "date": "data faktury",
+        "duedate": "Termin płatności",
+        "invoicenum": "Numer faktury"
+      },
+      "title": {
+        "dunning1": {
+          "name": "1. Upomnienie"
+        },
+        "dunning2": {
+          "name": "2. Upomnienie"
+        },
+        "dunning3": {
+          "name": "Wezwanie ostateczne"
+        },
+        "reminder": {
+          "name": "Przypomnienie o płatności",
+          "no": "Nr referencyjny",
+          "number": "Numer referencyjny"
+        }
+      }
+    },
+    "extdataname": {
+      "customer_conditions": "Warunki płatności i dostawy",
+      "supplier_conditions": "Warunki płatności i dostawy"
+    },
+    "field": {
+      "agent": "Prowadzący",
+      "client_agent": "Prowadzący u kontrahenta",
+      "client_date": "Data u kontrahenta",
+      "client_ref": "Nr u kontahenta",
+      "customervatid": "NIP Kontrahenta",
+      "date": "Data",
+      "docdate": "Data dokumentu",
+      "due": "Należność",
+      "duedate": "Termin",
+      "page": "Strona",
+      "pages": "Strony",
+      "refdate": "Data transakcji",
+      "registerid": "Nr rejestru handlowego",
+      "suppliervatid": "NIP Dostawcy",
+      "taxcode": "Stawka podatku",
+      "vatid": "NIP",
+      "youragent": "Odpowiedzialny",
+      "yourtransnum": "Nr transakcji",
+      "yourvatid": "NIP"
+    },
+    "item": {
+      "amount": "Ilość",
+      "description": "Opis",
+      "discount": "Rabat",
+      "item": "Pozycja",
+      "itemnum": "Nr pozycji.",
+      "items": "Pozycja",
+      "manufacturer": "Producent",
+      "name": "Nazwa",
+      "original": "Zgodnie z listem przewozowym {deliverynum} ({data})",
+      "pos": "#",
+      "price": "Cena/jedn.",
+      "priceperunit": "Cena jednostkowa",
+      "tax": "VAT",
+      "total": "Razem",
+      "unit": "jednostka"
+    },
+    "number": {
+      "decpoint": ".",
+      "separator": ","
+    },
+    "partner": {
+      "customer": {
+        "name": "Kontrahent",
+        "no": "Kontrahent Nr",
+        "number": "Kontrahent Numer"
+      },
+      "supplier": {
+        "name": "Sprzedawca",
+        "no": "Sprzedawca Nr.",
+        "number": "Sprzedawca Numer"
+      }
+    },
+    "type": {
+      "credit": {
+        "name": "Nota kredytowa",
+        "no": "Nota kredytowa Nr",
+        "number": "Nota kredytowa Numer"
+      },
+      "delivery": {
+        "name": "Dowód dostawy",
+        "no": "Dowód dostawy Nr",
+        "number": "Dowód dostawy numer"
+      },
+      "dunning": {
+        "name": "Upomnienie",
+        "no": "Upomnienie Nr",
+        "number": "Upomnienie numer"
+      },
+      "invoice": {
+        "name": "Faktura",
+        "no": "Faktura Nr",
+        "number": "Faktura numer"
+      },
+      "order": {
+        "name": "Zamówienie",
+        "no": "Zamówienie Nr",
+        "number": "Zamówienie numer"
+      },
+      "pinvoice": {
+        "name": "Faktura Pro-forma",
+        "no": "Faktura Pro-forma Nr",
+        "number": "Faktura Pro-forma numer"
+      },
+      "quote": {
+        "name": "Quote",
+        "no": "Quotation no.",
+        "number": "Quotation number"
+      },
+      "scredit": {
+        "name": "Kredyt dostawcy",
+        "no": "Kredyt dostawcy Nr",
+        "number": "Kredyt dostawcy Numer"
+      },
+      "sdelivery": {
+        "name": "Dostawa dostawcy",
+        "no": "Dostawa dostawcy no.",
+        "number": "Numer dostawy"
+      },
+      "sinvoice": {
+        "name": "Faktura dostawcy",
+        "no": "Faktura dostawcy Nr",
+        "number": "Faktura dostawcy numer"
+      },
+      "sorder": {
+        "name": "Zamówienie",
+        "no": "Zamówienie Nr",
+        "number": "Zamówienie number"
+      },
+      "srequest": {
+        "name": "Zapotrzebowanie",
+        "no": "Zapotrzebowanie Nr",
+        "number": "Zapotrzebowanie numer"
+      }
+    },
+    "webletname": {
+      "dialog-billing": "Drukuj do PDF",
+      "dialog-collection": "Drukuj do PDF",
+      "dialog-procurement": "Drukuj do PDF"
+    }
+  }

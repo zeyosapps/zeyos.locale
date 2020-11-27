@@ -322,6 +322,10 @@
             "plural": "Seriennummern",
             "singular": "Seriennummer"
         },
+        "charges": {
+            "plural": "Chargen",
+            "singular": "Charge"
+        },
         "stocktransactions": {
             "plural": "Lagerbuchungen",
             "singular": "Lagerbuchung"

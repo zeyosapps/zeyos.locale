@@ -1,0 +1,17 @@
+{
+    "minus": "minus",
+    "hundred": "hundred",
+    "and": "and",
+    "numerals": ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
+        "then", "eleven", "twelve", "thirteen", "vierzehn", "fünfzehn", "sechzehn", "siebzehn", "achtzehn", "neunzehn"],
+    "tenners": ["", "", "zwanzig", "dreißig", "vierzig", "fünfzig", "sechzig", "siebzig", "achtzig", "neunzig"],
+    "groups": [
+        ["s", ""],
+        ["tausend ", "tausend "],
+        ["e Million ", " Millionen "],
+        ["e Milliarde ", " Milliarden "],
+        ["e Billion ", " Billionen "],
+        ["e Billiarde ", " Billiarden "],
+        ["e Trillion ", " Trillionen "]
+    ]
+}

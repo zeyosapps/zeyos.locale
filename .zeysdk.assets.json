@@ -20,6 +20,10 @@
       "mimetype": "application/json",
       "name": "Common Language Variables (es_ES)"
     },
+    "common.fr_FR": {
+      "mimetype": "application/json",
+      "name": "Common Language Variables (fr_FR)"
+    },
     "billing.de_DE": {
       "mimetype": "application/json",
       "name": "Billing Language Variables (de_DE)"
@@ -32,6 +36,10 @@
       "mimetype": "application/json",
       "name": "Billing Language Variables (es_ES)"
     },
+    "billing.fr_FR": {
+      "mimetype": "application/json",
+      "name": "Billing Language Variables (fr_FR)"
+    },
     "countries.de_DE": {
       "mimetype": "application/json",
       "name": "Countries de_DE"
@@ -43,6 +51,38 @@
     "countries.es_ES": {
       "mimetype": "application/json",
       "name": "Countries es_ES"
+    },
+    "countries.fr_FR": {
+      "mimetype": "application/json",
+      "name": "Countries fr_FR"
+    },
+    "billing.pl_PL": {
+      "name": "Billing Language Variables (pl_PL)",
+      "mimetype": "application/json"
+    },
+    "common.pl_PL": {
+      "name": "Common Language Variables (pl_PL)",
+      "mimetype": "application/json"
+    },
+    "zeyos.de_DE": {
+      "name": "ZeyOS Language Variables (de_DE)",
+      "mimetype": "application/json"
+    },
+    "zeyos.en_US": {
+      "name": "ZeyOS Language Variables (en_US)",
+      "mimetype": "application/json"
+    },
+    "zeyos.es_ES": {
+      "name": "ZeyOS Language Variables (es_ES)",
+      "mimetype": "application/json"
+    },
+    "numerals.de_DE": {
+      "mimetype": "application/json",
+      "name": "Numerals de_DE"
+    },
+    "numerals.en_US": {
+      "mimetype": "application/json",
+      "name": "Numerals en_US"
     }
   }
 }

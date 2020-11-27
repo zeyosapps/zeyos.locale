@@ -1,0 +1,633 @@
+{
+    "action": {
+      "abort": "Anulować",
+      "activate": "Włączyć",
+      "add": "Dodaj",
+      "back": "Cofnij",
+      "changepwd": "Zmień hasło",
+      "close": "Zamknij",
+      "complete": "Kompletny",
+      "confirm": "Potwierdź",
+      "deactivate": "Wyłączyć",
+      "delete": "Usuń",
+      "edit": "Edytuj",
+      "execute": "Przejdź",
+      "filter": "Filtr",
+      "import": "Import",
+      "install": "Instaluj",
+      "invite": "Zapraszam",
+      "leave": "Opuść",
+      "login": "Login",
+      "logout": "Wyloguj",
+      "new_app": "Nowa App",
+      "new_version": "Nowa wersja",
+      "next": "Kolejny",
+      "notify": "Ustawienia",
+      "ok": "Ok",
+      "open": "Otwarty",
+      "refresh": "Odśwież",
+      "remove": "Usunąć",
+      "reset": "Reset",
+      "restore": "Odzyskaj",
+      "save": "Zapisz",
+      "signup": "Zapisz się",
+      "submit": "Zatwierdź",
+      "update": "Aktualizuj"
+    },
+    "address": {
+      "delivery": "Adres dostawy",
+      "invoice": "Adres do faktury"
+    },
+    "amount": {
+      "amount": "Ilość",
+      "balance": "Saldo",
+      "discount": "Rabat",
+      "dunning": "Opłata za przejazd",
+      "netamount": "Kwota netto",
+      "netdiscount": {
+        "excluding": "Suma netto (bez rabatu)",
+        "including": "Całkowita kwota netto (z uwzględnieniem rabatu)"
+      },
+      "nettotal": "Łącznie netto",
+      "paid": "Zapłacona kwota",
+      "payable": "Pozostało do zapłaty",
+      "subtotal": "Suma częściowa",
+      "tax": {
+        "addon": "plus {stawka podatku}% VAT",
+        "base": "Kwota podstawy opodatkowania",
+        "onamount": "plus {stawka podatku}% VAT od {ilość}",
+        "vat": "VAT"
+      },
+      "total": "Razem"
+    },
+    "common": {
+      "all": "Wszystko",
+      "condition": "Stan",
+      "confirmation": "Potwierdzenie",
+      "currency": "Waluta",
+      "entities": "Podmiot",
+      "entity": "Jednostka",
+      "error": "Błąd",
+      "export": "Export",
+      "field": "Pole",
+      "fields": "Pola",
+      "format": "Format",
+      "import": "Import",
+      "info": "Info",
+      "mandatory": "Obowiązkowy",
+      "new": "Nowy",
+      "no": "Nie",
+      "old": "stary",
+      "permission_denied": "Odmowa uprawnień!",
+      "preview": "Zapowiedź",
+      "profile": "Profil",
+      "relation": "Kontakt",
+      "relations": "Kontakty",
+      "result": "Wynik",
+      "results": "Wyniki",
+      "type": "Type",
+      "warning": "Ostrzeżenie",
+      "yes": "Tak"
+    },
+    "confirm": {
+      "remove": "Czy na pewno chcesz usunąć {value}",
+      "save": "Czy na pewno chcesz zapisać {value}?"
+    },
+    "currency": {
+      "eur": {
+        "char": "Eur",
+        "name": "Euro",
+        "sign": "€"
+      },
+      "usd": {
+        "char": "USD",
+        "name": "US Dollar",
+        "sign": "$"
+      }
+    },
+    "date": {
+      "abbr_day_names": [
+        "Pon",
+        "Wt",
+        "Śr",
+        "Czw",
+        "Pt",
+        "Sob",
+        "Niedz"
+      ],
+      "abbr_month_names": [
+        null,
+        "STY",
+        "LUT",
+        "MAR",
+        "KWI",
+        "MAJ",
+        "CZE",
+        "LIP",
+        "SIE",
+        "WRZ",
+        "PAZ",
+        "LIS",
+        "GRU"
+      ],
+      "day_names": [
+        "Niedziela",
+        "Poniedziałek",
+        "Wtorek",
+        "Środa",
+        "Czwartek",
+        "Piątek",
+        "Sobota"
+      ],
+      "format": {
+        "default": "m/d/R",
+        "short": "m/d"
+      },
+      "month_names": [
+        null,
+        "Styczeń",
+        "Luty",
+        "Marzec",
+        "Kwiecień",
+        "Maj",
+        "Czerwiec",
+        "Lipiec",
+        "Sierpień",
+        "Wrześień",
+        "Październik",
+        "Listopad",
+        "Grudzień"
+      ]
+    },
+    "datetime": {
+      "distance_in_words": {
+        "about_x_hours": {
+          "one": "Około 1 godziny",
+          "other": "około {count} godzin"
+        },
+        "about_x_months": {
+          "one": "około 1 miesiąca",
+          "other": "około {count} miesięcy"
+        },
+        "about_x_years": {
+          "one": "około 1 roku",
+          "other": "około {count} lat"
+        },
+        "almost_x_years": {
+          "one": "prawie 1 rok",
+          "other": "prawie {count} lat"
+        },
+        "half_a_minute": "pół minuty",
+        "less_than_x_minutes": {
+          "one": "mniej niż minutę",
+          "other": "mniej niż {count} minut"
+        },
+        "less_than_x_seconds": {
+          "one": "mniej niż 1 sekunda",
+          "other": "mniej niż {count} sekund"
+        },
+        "over_x_years": {
+          "one": "ponad rok",
+          "other": "ponad {count} lat"
+        },
+        "x_days": {
+          "one": "1 dzień",
+          "other": "{count} dni"
+        },
+        "x_minutes": {
+          "one": "1 minuta",
+          "other": "{count} minut"
+        },
+        "x_months": {
+          "one": "1 miesiąc",
+          "other": "{count} miesięcy"
+        },
+        "x_seconds": {
+          "one": "1 sekunnda",
+          "other": "{count} sekund"
+        }
+      },
+      "unit": {
+        "day": "Dzień",
+        "month": "Miesiąc",
+        "year": "Rok"
+      }
+    },
+    "entity": {
+      "accounts": {
+        "plural": "Konta",
+        "singular": "Konto"
+      },
+      "activity": {
+        "plural": "Aktywność",
+        "singular": "Aktywny"
+      },
+      "campaigns": {
+        "plural": "Kampanie",
+        "singular": "Kampania"
+      },
+      "cases": {
+        "plural": "Przypadki",
+        "singular": "Przypadek"
+      },
+      "category": {
+        "plural": "Kategorie",
+        "singular": "Kategoria"
+      },
+      "charges": {
+          "plural": "Charges",
+          "singular": "Charge"
+      },
+      "clocking": {
+        "plural": "Zapisywanie czasu",
+        "singular": "Zapisz czas"
+      },
+      "comments": {
+        "plural": "Komentarze",
+        "singular": "Komentarz"
+      },
+      "contacts": {
+        "plural": "Kontakty",
+        "singular": "Kontakt"
+      },
+      "contracts": {
+        "plural": "Umowy",
+        "singular": "Umowa"
+      },
+      "customer": {
+        "plural": "Klienci",
+        "singular": "Klient"
+      },
+      "dunning": {
+        "plural": "Procesy",
+        "singular": "Proces"
+      },
+      "field": {
+        "plural": "Pola",
+        "singular": "Pole"
+      },
+      "groups": {
+        "plural": "Grupy",
+        "singular": "Grupa"
+      },
+      "items": {
+        "plural": "Sztuki",
+        "singular": "Sztuka"
+      },
+      "language": {
+        "plural": "Języki",
+        "singular": "Język"
+      },
+      "links": {
+        "plural": "Łącza",
+        "singular": "Łącze"
+      },
+      "mailinglists": {
+        "plural": "Listy mailingowe",
+        "singular": "Lista mailingowa"
+      },
+      "mailservers": {
+        "plural": "Serwery pocztowe",
+        "singular": "Serwer pocztowy"
+      },
+      "messages": {
+        "plural": "Wiadomości",
+        "singular": "Wiadomość"
+      },
+      "notes": {
+        "plural": "Notatki",
+        "singular": "Notatka"
+      },
+      "opportunities": {
+        "plural": "Możliwości",
+        "singular": "Możliwość"
+      },
+      "organization": {
+        "plural": "Organizacje",
+        "singular": "Organizacja"
+      },
+      "payments": {
+        "plural": "Płatności",
+        "singular": "Płatność"
+      },
+      "pricelists": {
+        "plural": "Cenniki",
+        "singular": "Cennik"
+      },
+      "pricelists2items": {
+        "plural": "Pozycje cennika",
+        "singular": "Pozcja cennika"
+      },
+      "projects": {
+        "plural": "Projekty",
+        "singular": "Projekt"
+      },
+      "serials": {
+        "plural": "Seryjne",
+        "singular": "Seryjny"
+      },
+      "stocktransactions": {
+        "plural": "Stock Transactions",
+        "singular": "Stock Transaction"
+      },
+      "storages": {
+        "plural": "Magazyny",
+        "singular": "Magazyn"
+      },
+      "tags": {
+        "plural": "Tagi",
+        "singular": "Tag"
+      },
+      "tasks": {
+        "plural": "Zadania",
+        "singular": "Zadanie"
+      },
+      "tickets": {
+        "plural": "Numery",
+        "singular": "Numer"
+      },
+      "transactions": {
+        "plural": "Transakcje",
+        "singular": "Transakcja"
+      },
+      "users": {
+        "plural": "Użytkownicy",
+        "singular": "Użytkownik"
+      }
+    },
+    "error": {
+      "accepted": "{value} musi zostać zaakceptowana",
+      "add": "Nie można dodać {model}",
+      "app_not_public": "Aplikacja nie jest publiczna",
+      "blank": "{value} nie może być pusta",
+      "circular_dependency": "Ta relacja spowodowałaby zależność cykliczną",
+      "confirm_agb": "Musisz potwierdzić warunki korzystania z usługi",
+      "confirmation": "{value} nie pasuje do potwierdzenia",
+      "country_short": "{value} musi składać się z dwóch znaków (np. EN)",
+      "create": "Nie można utworzyć nowego {model}",
+      "date_invalid": "Nieprawidłowa data",
+      "date_range": "{value} musi mieścić się w przedziale od {min} do {max}",
+      "date_start_end": "{value} musi być przed datą zakończenia ({end})",
+      "defaultlang_not_set": "Brak domyślnego zestawu językowego",
+      "dependency_require_purchase": "Należy kupić",
+      "empty": "{value} nie może być pusta",
+      "entity_exists": "{model} z {field} \"{value}\" już istnieje",
+      "equal_to": "{value} musi być dokładnie {count}",
+      "even": "{value} musi być równa",
+      "exclusion": "{value} jest zarezerwowana",
+      "greater_than": "{value} musi być większe niż {count}",
+      "identifier": "{value} nie jest prawidłowym identyfikatorem",
+      "import": "Nie można zaimportować {model}",
+      "in_between": "{value} musi mieścić się w przedziale od {min} do {max}",
+      "inclusion": "{value} nie znajduje się na liście",
+      "invalid": "{value} jest nieprawidłowa",
+      "invalid_response": "Nieprawidłowa odpowiedź serwera",
+      "invitation_exists": "Zaproszenie na e-mail {email} do {podmiotu} już istnieje",
+      "less_than": "{value} musi być mniejsze niż {count}",
+      "loginrequired": "Ymusisz być zalogowany, aby wyświetlić ten widok",
+      "no_data": "Brak danych",
+      "no_existing_user": "Użytkownik \"{value}\" nie istnieje",
+      "no_options": "Brak dostępnych opcji",
+      "no_storage": "Nie przechowywać",
+      "noselection": "Nie wybrano {model}",
+      "not_a_address": "{value} nie jest prawidłowym adresem {type}",
+      "not_a_date": "{value} nie jest prawidłową datą",
+      "not_a_int": "{value} nie jest prawidłową liczbą całkowitą",
+      "not_a_number": "{value} nie jest liczbą",
+      "not_a_url": "{wartośc} nie jest prawidłowym adresem URL",
+      "not_set": "{value} nie jest ustawiona",
+      "odd": "{value} musi być nieparzysta",
+      "one": "1 błąd uniemożliwił zapisanie tego {model}",
+      "other": "{count} błędy uniemożliwiły zapisanie tego {model}",
+      "password": "Nieprawidłowe hasło",
+      "password_no_match": "Hasła nie pasują do siebie",
+      "remove": "Nie można usunąć {model}",
+      "taken": "{value} została już zajęta",
+      "too_long": "{value} jest za długia (maksimum to {count} znaków)",
+      "too_short": "{value} jest za krótka (minimum to {count} znaków)",
+      "update": "Nie można zaktualizować {model}",
+      "wrong_length": "{value} ma niepoprawną długość (powinno być {count} znaków)"
+    },
+    "field": {
+      "additional_user": "Dodatkowy użytkownik",
+      "address": "Adres",
+      "amount": "Ilość",
+      "app": "Formularz",
+      "assigneduser": "Przypisany użytkownik",
+      "author": "Autor",
+      "city": "Miasto",
+      "company": "Firma",
+      "confirmpassword": "Potwierdź hasło",
+      "country": "Kraj",
+      "creationdate": "Stworzony",
+      "currency": "Waluta",
+      "data": "Data",
+      "date": "Daty",
+      "defaultlanguage": "Domyślny język",
+      "delta": "Delta",
+      "description": "Opis",
+      "duedate": "Termin płatności",
+      "effort": "Próba",
+      "email": "Adres e-mail",
+      "end": "Koniec",
+      "enddate": "Data zakonczenia",
+      "fax": "Numer faksu",
+      "file": "Plik",
+      "firstname": "Imię",
+      "from": "Od",
+      "gravatar_link": "Gravatar link",
+      "hourlyrate": "Stawka godzinowa",
+      "identifier": "Identyfikator",
+      "invite": "Zaproszenie",
+      "itemno": "Pozycja Nr",
+      "itemnumber": "Pozycja numer",
+      "lastmodified": "Ostatnio zmodyfikowany",
+      "lastname": "Nazwisko",
+      "name": "Nazwa",
+      "number": "Numer",
+      "organization": "Organizacja",
+      "owner": "Właściciel",
+      "password": "Hasło",
+      "permission": "Pozwolenie",
+      "personalinfo": "Informacje osobiste",
+      "phone": "Numer telefonu",
+      "pleaseselect": "Proszę wybrać",
+      "priority": "Priorytet",
+      "private": "Prywatny",
+      "province": "Województwo",
+      "public": "Publiczny",
+      "receipient": "Odbiorca",
+      "reference": "Odniesienie",
+      "sender": "Nadawca",
+      "shared": "Udostępnione",
+      "source": "Kod źródłowy",
+      "start": "Start",
+      "startdate": "Data rozpoczęcia",
+      "state": "Stan",
+      "status": "Status",
+      "stocklocation": "Lokalizacja",
+      "storage": "Przechowywanie",
+      "subject": "Przedmiot",
+      "surname": "Nazwisko",
+      "to": "Do",
+      "transaction": "Transakcja",
+      "transactionno": "Transakcja Nr",
+      "transactionnumber": "Transakcja nmer",
+      "type": "Typ",
+      "unitprice": "Cena jednostkowa",
+      "url": "URL",
+      "user_count": "Liczba użytkowników",
+      "username": "Nazwa Użytkownika",
+      "vat": "NIP",
+      "version": "Wersja",
+      "version_branch": "Wersja oddziału",
+      "visibility": "Widoczność",
+      "website": "Strona internetowa",
+      "zipcode": "Kod pocztowy"
+    },
+    "item": {
+      "amount": "Ilość",
+      "description": "Opis",
+      "discount": "Rabat",
+      "item": "Pozycja",
+      "itemnum": "Pozycja Nr",
+      "items": "Pozycje",
+      "manufacturer": "Producent",
+      "name": "Imię",
+      "original": "Zgodnie z listem przewozowym {numer dostawy} ({date})",
+      "pos": "#",
+      "price": "Cena/jedn.",
+      "priceperunit": "Cena za jednostkę",
+      "tax": "VAT",
+      "total": "Razem",
+      "unit": "jednostka"
+    },
+    "lang": {
+      "code": "en",
+      "name": "English"
+    },
+    "languages": {
+      "de_DE": "German",
+      "en_US": "English",
+      "es_ES": "Spanish",
+      "fr_FR": "French",
+      "it_IT": "Italian"
+    },
+    "message": {
+      "activate": "{model} aktywowany",
+      "add": "Dodano {model}",
+      "change": "{Model} został pomyślnie zmieniony",
+      "create": "{Model} został pomyślnie utworzony",
+      "deactivate": "{model} dezaktywowany",
+      "delete": "Usunięto {model}",
+      "error": "Wystąpiły następujące błędy:",
+      "import": "Pomyślnie zaimportowano {model}",
+      "invited": "Zaproszenie {model}",
+      "passwordreset": "Resetowanie hasła i powiadomienie wysyłane na Twój adres e-mail",
+      "passwordsmustmatch": "Hasło musi pasować",
+      "remove": "{model} usunięto",
+      "restore": "{model} przywrócono",
+      "update": "{model} zaktualizowany"
+    },
+    "number": {
+      "currency": {
+        "format": "%u %n",
+        "precision": "2",
+        "unit": "zł"
+      },
+      "delimiter": ".",
+      "separator": ","
+    },
+    "partner": {
+      "customer": {
+        "name": "Klient",
+        "no": "Klient Nr",
+        "number": "Klient numer"
+      },
+      "supplier": {
+        "name": "Dostawca",
+        "no": "Dostawca Nr",
+        "number": "Dostawca numer"
+      }
+    },
+    "priority": {
+      "high": "Wysoki",
+      "highest": "Najwyższy",
+      "low": "Niski",
+      "lowest": "Najniższy",
+      "medium": "Średni"
+    },
+    "time": {
+      "first_day_of_week": "7",
+      "format": {
+        "default": "%m/%d/%R",
+        "full": "%m/%d/%R %I:%M %p",
+        "fullday": "%a %m/%d/%R %I:%M %p",
+        "long": "%B %d, %Y",
+        "short": "%d %b",
+        "time": "%I:%M %p"
+      }
+    },
+    "transaction": {
+      "credit": {
+        "name": "Nota kredytowa",
+        "no": "Nota kredytowa nr",
+        "number": "Numer noty kredytowej"
+      },
+      "delivery": {
+        "name": "Dowód dostawy",
+        "no": "Dowód dostawy nr",
+        "number": "Dowód dostawy numer"
+      },
+      "dunning": {
+        "name": "Przypomnienie o zapłacie",
+        "no": "Przypomnienie o zapłacie nr",
+        "number": "Przypomnienie o zapłacie numer"
+      },
+      "invoice": {
+        "name": "Faktura",
+        "no": "Faktura Nr.",
+        "number": "Faktura numer"
+      },
+      "order": {
+        "name": "Zamówienie",
+        "no": "Zamówienie Nr.",
+        "number": "Zamówienie numer"
+      },
+      "pinvoice": {
+        "name": "Faktura Pro-forma",
+        "no": "PI No.",
+        "number": "PI Number"
+      },
+      "quote": {
+        "name": "Oferta",
+        "no": "Quotation no.",
+        "number": "Quotation number"
+      },
+      "scredit": {
+        "name": "Kredyt dostawcy",
+        "no": "Nota kredytowa nr.",
+        "number": "Numer noty kredytowej"
+      },
+      "sdelivery": {
+        "name": "Dostawa dostawcy",
+        "no": "Nr przesyłki",
+        "number": "Numer dostawy"
+      },
+      "sinvoice": {
+        "name": "Faktura dostawcy",
+        "no": "Faktura nr.",
+        "number": "Numer faktury"
+      },
+      "sorder": {
+        "name": "Zamówienie",
+        "no": "Nr zamówienia",
+        "number": "Numer zamówienia"
+      },
+      "srequest": {
+        "name": "Zapotrzebowanie",
+        "no": "Zapotrzebowanie nr",
+        "number": "Zapotrzebowanie numer"
+      }
+    }
+  }

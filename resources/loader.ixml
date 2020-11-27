@@ -351,18 +351,22 @@
 		@param {array}  replace  Placeholder replacements
 	-->
 	<method name="get">
-		<split delimiter="." var="e">$label</split>
-
-		<assign var="r" var_source="this.labels"/>
-		<foreach var="e" var_value="l">
-			<is type="undefined" var="r[$l]">
-				<set var="return">$label</set>
-				<return />
-			<else>
-				<assign var="r" var_source="r[$l]"/>
-			</else>
-			</is>
-		</foreach>
+		<if value1="$this.labels[$label]" func="!=">
+			<set var="r">$this.labels[$label]</set>
+		<else>
+			<split delimiter="." var="e">$label</split>
+			<assign var="r" var_source="this.labels"/>
+			<foreach var="e" var_value="l">
+				<is type="undefined" var="r[$l]">
+					<set var="return">$label</set>
+					<return />
+				<else>
+					<assign var="r" var_source="r[$l]"/>
+				</else>
+				</is>
+			</foreach>
+		</else>
+		</if>
 
 		<is type="defined" var="replace">
 			<call func="this.substitute" var="return">
